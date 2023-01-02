@@ -1,0 +1,1468 @@
+**** start log for [stopped] Cadastros  v: 21.02.041   [01 - CD] - Usr: [RONALDOBLJ] - [CONSINCO@EXTRABC5] *************************
+**** end log for [stopped] Cadastros  v: 21.02.041   [01 - CD] - Usr: [RONALDOBLJ] - [CONSINCO@EXTRABC5] *************************
+
+**** start log for RONALDOBLJ@EXTRABC5 - PL/SQL Developer - SELECT * FROM consinco.TEX ... *************************
+**** end log for RONALDOBLJ@EXTRABC5 - PL/SQL Developer - SELECT * FROM consinco.TEX ... *************************
+
+**** start log for [stopped] Contrato Fidelidade  v: 21.02.041   [01 - CD] - Usr: [RONALDOBLJ] - [CONSINCO@EXTRABC5] *************************
+**** end log for [stopped] Contrato Fidelidade  v: 21.02.041   [01 - CD] - Usr: [RONALDOBLJ] - [CONSINCO@EXTRABC5] *************************
+
+**** start log for Cadastros  v: 21.02.041   [01 - CD] - Usr: [RONALDOBLJ] - [CONSINCO@EXTRABC5] *************************
+Time: 09:43:42 Prepare     [125936848]  oparse                         session #1
+    Select NOMERAZAO, CIDADE,  UF, 
+    		CEP, BAIRRO, LOGRADOURO, 
+    		NROLOGRADOURO, CMPLTOLOGRADOURO, EMAIL, 
+           		FONEDDD1, FONENRO1, FONECMPL1, 
+           		substr( fc5MaskCNPJCPF( NROCGCCPF, DIGCGCCPF, FISICAJURIDICA ), 1, 20 ), INSCRICAORG, 
+    		FISICAJURIDICA, PISNIT 
+    	From 	GE_PESSOA  
+    	Where 	SEQPESSOA =:1                               
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+Time: 09:43:42 Bind (in)   [125936848]  bind function                  session #
+    '1095'
+Time: 09:43:42 Execute     [125936848]  oexec                          session #1
+    Select NOMERAZAO, CIDADE,  UF, 
+    		CEP, BAIRRO, LOGRADOURO, 
+    		NROLOGRADOURO, CMPLTOLOGRADOURO, EMAIL, 
+           		FONEDDD1, FONENRO1, FONECMPL1, 
+           		substr( fc5MaskCNPJCPF( NROCGCCPF, DIGCGCCPF, FISICAJURIDICA ), 1, 20 ), INSCRICAORG, 
+    		FISICAJURIDICA, PISNIT 
+    	From 	GE_PESSOA  
+    	Where 	SEQPESSOA =:1                               
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+Time: 09:43:42 Bind (out)  [125936848]  bind function                  session #
+    '1095'
+Time: 09:43:42 Prepare     [127556552]  oparse                         session #1
+    select MAF_FORNECEDOR.INDRECEBVENCVLRLIQ, MAF_FORNECEDOR.EMAILDEVFORNEC, MAF_FORNECEDOR.EmailPzoMaxRetirArq, MAF_FORNECEDOR.EmailPzoMedRetirArqNF, MAF_FORNECEDOR.SEQFORNECEDOR, MAF_FORNECEDOR.CODIGOEAN, MAF_FORNECEDOR.TOLERANCTRANSPDIAS, MAF_FORNECEDOR.INDTIPCONSRECEBALIQDIF, MAF_FORNECEDOR.OBSERVACAO, MAF_FORNECEDOR.PZOMEDRETIRARQEDI, MAF_FORNECEDOR.PZOMAXRETIRARQEDI, MAF_FORNECEDOR.PZOMEDRETIRARQEDINF, MAF_FORNECEDOR.INDBLOQDTAVENCPED, MAF_FORNECEDOR.INDPARCEIROPROMOC, MAF_FORNECEDOR.MICROEMPRESA, MAF_FORNECEDOR.SOLPRORROGVENCTO, MAF_FORNECEDOR.INDREPLICACAO, MAF_FORNECEDOR.INDGEROUREPLICACAO, MAF_FORNECEDOR.USUALTERACAO, MAF_FORNECEDOR.DTAALTERACAO, MAF_FORNECEDOR.EmailPzoMedRetirArq, MAF_FORNECEDOR.INDGERACOTTRANSF, MAF_FORNECEDOR.CONDICAOFRETE, MAF_FORNECEDOR.STATUSGERAL, MAF_FORNECEDOR.TIPFORNECEDOR, MAF_FORNECEDOR.INDSUSPPISCOFINS, MAF_FORNECEDOR.INDPRODUZMARCAPROPRIAEMP, MAF_FORNECEDOR.INDMEDICAMENTO, MAF_FORNECEDOR.EMAILPEDCOMPRA, MAF_FORNECEDOR.EMAILAGEFORNEC, MAF_FORNECEDOR.AGENDA_PERIODICIDADE, MAF_FORNECEDOR.AGENDA_DIAS_INTERVALO, MAF_FORNECEDOR.AGENDA_HORA_VISITA, MAF_FORNECEDOR.AGENDA_SEG, MAF_FORNECEDOR.AGENDA_TER, MAF_FORNECEDOR.AGENDA_QUA, MAF_FORNECEDOR.AGENDA_QUI, MAF_FORNECEDOR.AGENDA_SEX, MAF_FORNECEDOR.AGENDA_SAB, MAF_FORNECEDOR.AGENDA_DOM, MAF_FORNECEDOR.MODELOAFVFORNEC, MAF_FORNECEDOR.INDMEDIDAMETADISTRIB, MAF_FORNECEDOR.INDEXIBEFORNECEDIPEDIDO, MAF_FORNECEDOR.INDEQUIPINDUSTRIATRANSF, MAF_FORNECEDOR.INDCODBUSCAPROD, MAF_FORNECEDOR.INDPERMDESCVENDA, MAF_FORNECEDOR.INDEXIGECONTRATOPS, MAF_FORNECEDOR.INDIPIEQUIPARAINDUSTRIA, MAF_FORNECEDOR.INDAGENDACOMPRADOR, NVL(INDGERATIVAUTOBPMRECTOCENTR, 'S'), MAF_FORNECEDOR.INDDETENTORREGIMEESPECIAL, MAF_FORNECEDOR.INDRESPRETSTDRCST, MAF_FORNECEDOR.INDPMTDEVSEMNFREF                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+    from MAF_FORNECEDOR 
+    where MAF_FORNECEDOR.SEQFORNECEDOR = :1                             
+Time: 09:43:42 Bind (in)   [127556552]  bind function                  session #
+    '1095'
+Time: 09:43:42 Execute     [127556552]  oexec                          session #1
+    select MAF_FORNECEDOR.INDRECEBVENCVLRLIQ, MAF_FORNECEDOR.EMAILDEVFORNEC, MAF_FORNECEDOR.EmailPzoMaxRetirArq, MAF_FORNECEDOR.EmailPzoMedRetirArqNF, MAF_FORNECEDOR.SEQFORNECEDOR, MAF_FORNECEDOR.CODIGOEAN, MAF_FORNECEDOR.TOLERANCTRANSPDIAS, MAF_FORNECEDOR.INDTIPCONSRECEBALIQDIF, MAF_FORNECEDOR.OBSERVACAO, MAF_FORNECEDOR.PZOMEDRETIRARQEDI, MAF_FORNECEDOR.PZOMAXRETIRARQEDI, MAF_FORNECEDOR.PZOMEDRETIRARQEDINF, MAF_FORNECEDOR.INDBLOQDTAVENCPED, MAF_FORNECEDOR.INDPARCEIROPROMOC, MAF_FORNECEDOR.MICROEMPRESA, MAF_FORNECEDOR.SOLPRORROGVENCTO, MAF_FORNECEDOR.INDREPLICACAO, MAF_FORNECEDOR.INDGEROUREPLICACAO, MAF_FORNECEDOR.USUALTERACAO, MAF_FORNECEDOR.DTAALTERACAO, MAF_FORNECEDOR.EmailPzoMedRetirArq, MAF_FORNECEDOR.INDGERACOTTRANSF, MAF_FORNECEDOR.CONDICAOFRETE, MAF_FORNECEDOR.STATUSGERAL, MAF_FORNECEDOR.TIPFORNECEDOR, MAF_FORNECEDOR.INDSUSPPISCOFINS, MAF_FORNECEDOR.INDPRODUZMARCAPROPRIAEMP, MAF_FORNECEDOR.INDMEDICAMENTO, MAF_FORNECEDOR.EMAILPEDCOMPRA, MAF_FORNECEDOR.EMAILAGEFORNEC, MAF_FORNECEDOR.AGENDA_PERIODICIDADE, MAF_FORNECEDOR.AGENDA_DIAS_INTERVALO, MAF_FORNECEDOR.AGENDA_HORA_VISITA, MAF_FORNECEDOR.AGENDA_SEG, MAF_FORNECEDOR.AGENDA_TER, MAF_FORNECEDOR.AGENDA_QUA, MAF_FORNECEDOR.AGENDA_QUI, MAF_FORNECEDOR.AGENDA_SEX, MAF_FORNECEDOR.AGENDA_SAB, MAF_FORNECEDOR.AGENDA_DOM, MAF_FORNECEDOR.MODELOAFVFORNEC, MAF_FORNECEDOR.INDMEDIDAMETADISTRIB, MAF_FORNECEDOR.INDEXIBEFORNECEDIPEDIDO, MAF_FORNECEDOR.INDEQUIPINDUSTRIATRANSF, MAF_FORNECEDOR.INDCODBUSCAPROD, MAF_FORNECEDOR.INDPERMDESCVENDA, MAF_FORNECEDOR.INDEXIGECONTRATOPS, MAF_FORNECEDOR.INDIPIEQUIPARAINDUSTRIA, MAF_FORNECEDOR.INDAGENDACOMPRADOR, NVL(INDGERATIVAUTOBPMRECTOCENTR, 'S'), MAF_FORNECEDOR.INDDETENTORREGIMEESPECIAL, MAF_FORNECEDOR.INDRESPRETSTDRCST, MAF_FORNECEDOR.INDPMTDEVSEMNFREF                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+    from MAF_FORNECEDOR 
+    where MAF_FORNECEDOR.SEQFORNECEDOR = :1                             
+Time: 09:43:42 Bind (out)  [127556552]  bind function                  session #
+    '1095'
+Time: 09:43:42 Prepare     [125463832]  oparse                         session #1
+    Select NOMERAZAO, CIDADE,  UF, 
+    		CEP, BAIRRO, LOGRADOURO, 
+    		NROLOGRADOURO, CMPLTOLOGRADOURO, EMAIL, 
+           		FONEDDD1, FONENRO1, FONECMPL1, 
+           		substr( fc5MaskCNPJCPF( NROCGCCPF, DIGCGCCPF, FISICAJURIDICA ), 1, 20 ), INSCRICAORG, 
+    		FISICAJURIDICA, PISNIT 
+    	From 	GE_PESSOA  
+    	Where 	SEQPESSOA =:1                               
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+Time: 09:43:42 Bind (in)   [125463832]  bind function                  session #
+    '1095'
+Time: 09:43:42 Execute     [125463832]  oexec                          session #1
+    Select NOMERAZAO, CIDADE,  UF, 
+    		CEP, BAIRRO, LOGRADOURO, 
+    		NROLOGRADOURO, CMPLTOLOGRADOURO, EMAIL, 
+           		FONEDDD1, FONENRO1, FONECMPL1, 
+           		substr( fc5MaskCNPJCPF( NROCGCCPF, DIGCGCCPF, FISICAJURIDICA ), 1, 20 ), INSCRICAORG, 
+    		FISICAJURIDICA, PISNIT 
+    	From 	GE_PESSOA  
+    	Where 	SEQPESSOA =:1                               
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+Time: 09:43:42 Bind (out)  [125463832]  bind function                  session #
+    '1095'
+Time: 09:43:42 Prepare     [125463832]  oparse                         session #1
+     	SELECT O.INDAGENDACOMPRADOR 
+    			                                           
+     			  FROM MAF_FORNECCOMPRADORAGENDA F,  
+    			       MAF_FORNECEDOR O 
+    			 WHERE F.SEQFORNECEDOR = :1                              
+    			   AND F.SEQFORNECEDOR = O.SEQFORNECEDOR 
+      			   AND F.AGENDA_PERIODICIDADE != 'N'  
+Time: 09:43:42 Bind (in)   [125463832]  bind function                  session #
+    '1095'
+Time: 09:43:42 Execute     [125463832]  oexec                          session #1
+     	SELECT O.INDAGENDACOMPRADOR 
+    			                                           
+     			  FROM MAF_FORNECCOMPRADORAGENDA F,  
+    			       MAF_FORNECEDOR O 
+    			 WHERE F.SEQFORNECEDOR = :1                              
+    			   AND F.SEQFORNECEDOR = O.SEQFORNECEDOR 
+      			   AND F.AGENDA_PERIODICIDADE != 'N'  
+Time: 09:43:42 Bind (out)  [125463832]  bind function                  session #
+    '1095'
+Time: 09:43:42 Prepare     [48568152]   oparse                         session #
+     
+    		select 	A.NOMEREDUZIDO 
+    		from   	MAX_EMPRESA A, 
+    			MAF_FORNECDIVISAO B 
+    		where 	A.STATUS = 'A' 
+    		and 	B.NRODIVISAO = A.NRODIVISAO 
+    		and	B.SEQFORNECEDOR = :1                              
+    	
+Time: 09:43:42 Bind (in)   [48568152]   bind function                  session #
+    '1095'
+Time: 09:43:42 Execute     [48568152]   oexec                          session #
+     
+    		select 	A.NOMEREDUZIDO 
+    		from   	MAX_EMPRESA A, 
+    			MAF_FORNECDIVISAO B 
+    		where 	A.STATUS = 'A' 
+    		and 	B.NRODIVISAO = A.NRODIVISAO 
+    		and	B.SEQFORNECEDOR = :1                              
+    	
+Time: 09:43:42 Bind (out)  [48568152]   bind function                  session #
+    '1095'
+Time: 09:43:42 Prepare     [128290408]  oparse                         session #1
+    SELECT A.SEQPESSOAEMP 
+                                              
+                       FROM   MAX_EMPRESA A 
+                       WHERE  A.NROEMPRESA = :1             
+Time: 09:43:42 Bind (in)   [128290408]  bind function                  session #
+    '1'
+Time: 09:43:42 Execute     [128290408]  oexec                          session #1
+    SELECT A.SEQPESSOAEMP 
+                                              
+                       FROM   MAX_EMPRESA A 
+                       WHERE  A.NROEMPRESA = :1             
+Time: 09:43:42 Bind (out)  [128290408]  bind function                  session #
+    '1'
+Time: 09:43:42 Prepare     [125640128]  oparse                         session #1
+    select MAF_FORNECAGENDA.SEQFORNECEDOR, MAF_FORNECAGENDA.NRODIVISAO, MAF_FORNECAGENDA.SEQAGENDA, MAF_FORNECAGENDA.DTAVISITA, MAF_FORNECAGENDA.HORVISITA, MAF_FORNECAGENDA.SEQCOMPRADOR                                                                                                                                                                                                                                                                                            
+    from MAF_FORNECAGENDA  
+     
+    where MAF_FORNECAGENDA.SEQFORNECEDOR = :1                             
+Time: 09:43:42 Bind (in)   [125640128]  bind function                  session #
+    '1095'
+Time: 09:43:42 Execute     [125640128]  oexec                          session #1
+    select MAF_FORNECAGENDA.SEQFORNECEDOR, MAF_FORNECAGENDA.NRODIVISAO, MAF_FORNECAGENDA.SEQAGENDA, MAF_FORNECAGENDA.DTAVISITA, MAF_FORNECAGENDA.HORVISITA, MAF_FORNECAGENDA.SEQCOMPRADOR                                                                                                                                                                                                                                                                                            
+    from MAF_FORNECAGENDA  
+     
+    where MAF_FORNECAGENDA.SEQFORNECEDOR = :1                             
+Time: 09:43:42 Bind (out)  [125640128]  bind function                  session #
+    '1095'
+Time: 09:43:42 Prepare     [48580056]   oparse                         session #1
+    Select APELIDO From MAX_COMPRADOR Where SEQCOMPRADOR=:1                                        
+Time: 09:43:42 Bind (in)   [48580056]   bind function                  session #
+    '14'
+Time: 09:43:42 Execute     [48580056]   oexec                          session #1
+    Select APELIDO From MAX_COMPRADOR Where SEQCOMPRADOR=:1                                        
+Time: 09:43:42 Bind (out)  [48580056]   bind function                  session #
+    '14'
+Time: 09:43:42 Prepare     [48580056]   oparse                         session #1
+    Select APELIDO From MAX_COMPRADOR Where SEQCOMPRADOR=:1                                        
+Time: 09:43:42 Bind (in)   [48580056]   bind function                  session #
+    '13'
+Time: 09:43:42 Execute     [48580056]   oexec                          session #1
+    Select APELIDO From MAX_COMPRADOR Where SEQCOMPRADOR=:1                                        
+Time: 09:43:42 Bind (out)  [48580056]   bind function                  session #
+    '13'
+Time: 09:43:42 Prepare     [48580056]   oparse                         session #1
+    Select APELIDO From MAX_COMPRADOR Where SEQCOMPRADOR=:1                                        
+Time: 09:43:42 Bind (in)   [48580056]   bind function                  session #
+    '14'
+Time: 09:43:42 Execute     [48580056]   oexec                          session #1
+    Select APELIDO From MAX_COMPRADOR Where SEQCOMPRADOR=:1                                        
+Time: 09:43:42 Bind (out)  [48580056]   bind function                  session #
+    '14'
+Time: 09:43:43 Prepare     [48580056]   oparse                         session #1
+    Select APELIDO From MAX_COMPRADOR Where SEQCOMPRADOR=:1                                        
+Time: 09:43:43 Bind (in)   [48580056]   bind function                  session #
+    '13'
+Time: 09:43:43 Execute     [48580056]   oexec                          session #1
+    Select APELIDO From MAX_COMPRADOR Where SEQCOMPRADOR=:1                                        
+Time: 09:43:43 Bind (out)  [48580056]   bind function                  session #
+    '13'
+Time: 09:43:43 Prepare     [48580056]   oparse                         session #1
+    Select APELIDO From MAX_COMPRADOR Where SEQCOMPRADOR=:1                                        
+Time: 09:43:43 Bind (in)   [48580056]   bind function                  session #
+    '14'
+Time: 09:43:43 Execute     [48580056]   oexec                          session #1
+    Select APELIDO From MAX_COMPRADOR Where SEQCOMPRADOR=:1                                        
+Time: 09:43:43 Bind (out)  [48580056]   bind function                  session #
+    '14'
+Time: 09:43:43 Prepare     [48580056]   oparse                         session #1
+    Select APELIDO From MAX_COMPRADOR Where SEQCOMPRADOR=:1                                        
+Time: 09:43:43 Bind (in)   [48580056]   bind function                  session #
+    '13'
+Time: 09:43:43 Execute     [48580056]   oexec                          session #1
+    Select APELIDO From MAX_COMPRADOR Where SEQCOMPRADOR=:1                                        
+Time: 09:43:43 Bind (out)  [48580056]   bind function                  session #
+    '13'
+Time: 09:43:43 Prepare     [48580056]   oparse                         session #1
+    Select APELIDO From MAX_COMPRADOR Where SEQCOMPRADOR=:1                                        
+Time: 09:43:43 Bind (in)   [48580056]   bind function                  session #
+    '14'
+Time: 09:43:43 Execute     [48580056]   oexec                          session #1
+    Select APELIDO From MAX_COMPRADOR Where SEQCOMPRADOR=:1                                        
+Time: 09:43:43 Bind (out)  [48580056]   bind function                  session #
+    '14'
+Time: 09:43:43 Prepare     [48580056]   oparse                         session #1
+    Select APELIDO From MAX_COMPRADOR Where SEQCOMPRADOR=:1                                        
+Time: 09:43:43 Bind (in)   [48580056]   bind function                  session #
+    '13'
+Time: 09:43:43 Execute     [48580056]   oexec                          session #1
+    Select APELIDO From MAX_COMPRADOR Where SEQCOMPRADOR=:1                                        
+Time: 09:43:43 Bind (out)  [48580056]   bind function                  session #
+    '13'
+Time: 09:43:43 Prepare     [49416856]   oparse                         session #1
+    select MAF_FORNECUF.SEQFORNECEDOR, MAF_FORNECUF.UF, MAF_FORNECUF.INSCRICAOESTADUAL                                                                                                                                      
+    from MAF_FORNECUF Where MAF_FORNECUF.SEQFORNECEDOR = :1                              Order By UF
+Time: 09:43:43 Bind (in)   [49416856]   bind function                  session #
+    '1095'
+Time: 09:43:43 Execute     [49416856]   oexec                          session #1
+    select MAF_FORNECUF.SEQFORNECEDOR, MAF_FORNECUF.UF, MAF_FORNECUF.INSCRICAOESTADUAL                                                                                                                                      
+    from MAF_FORNECUF Where MAF_FORNECUF.SEQFORNECEDOR = :1                              Order By UF
+Time: 09:43:43 Bind (out)  [49416856]   bind function                  session #
+    '1095'
+Time: 09:43:43 Prepare     [125219696]  oparse                         session #1
+    select MAF_FORNECAVISO.DTAINCLUSAO, MAF_FORNECAVISO.USUINCLUSAO, MAF_FORNECAVISO.DTARECEPCAO, MAF_FORNECAVISO.USURECEPCAO, MAF_FORNECAVISO.NROEMPRESA, MAF_FORNECAVISO.SEQFORNECAVISO, MAF_FORNECAVISO.SEQFORNECEDOR                                                                                                                                                                                                                                                                                                                                             
+    from MAF_FORNECAVISO  
+     
+    where MAF_FORNECAVISO.SEQFORNECEDOR = :1                              
+     
+    order by DTAINCLUSAO
+Time: 09:43:43 Bind (in)   [125219696]  bind function                  session #
+    '1095'
+Time: 09:43:43 Execute     [125219696]  oexec                          session #1
+    select MAF_FORNECAVISO.DTAINCLUSAO, MAF_FORNECAVISO.USUINCLUSAO, MAF_FORNECAVISO.DTARECEPCAO, MAF_FORNECAVISO.USURECEPCAO, MAF_FORNECAVISO.NROEMPRESA, MAF_FORNECAVISO.SEQFORNECAVISO, MAF_FORNECAVISO.SEQFORNECEDOR                                                                                                                                                                                                                                                                                                                                             
+    from MAF_FORNECAVISO  
+     
+    where MAF_FORNECAVISO.SEQFORNECEDOR = :1                              
+     
+    order by DTAINCLUSAO
+Time: 09:43:43 Bind (out)  [125219696]  bind function                  session #
+    '1095'
+Time: 09:43:43 Prepare     [125568600]  oparse                         session #1
+    select MAF_FORNECDIVISAO.NRODIVISAO, MAF_FORNECDIVISAO.INDPZOPAGAMENTO, MAF_FORNECDIVISAO.INDCANCPEDPEND, MAF_FORNECDIVISAO.SEQFORNECEDOR, MAF_FORNECDIVISAO.SEQCOMPRADOR, MAF_FORNECDIVISAO.STATUSGERAL, MAF_FORNECDIVISAO.INDREPLICACAO, MAF_FORNECDIVISAO.INDGEROUREPLICACAO, MAF_FORNECDIVISAO.EXGTABELACOMPRA, MAF_FORNECDIVISAO.INDLIBERACAOCOMPRA, MAF_FORNECDIVISAO.PZOPAGAMENTO, MAF_FORNECDIVISAO.TIPODTABASEVENCTO, MAF_FORNECDIVISAO.PZOVENCACORDO, MAF_FORNECDIVISAO.PZOMEDENTREGA, MAF_FORNECDIVISAO.PERCDESCFINACORDO, MAF_FORNECDIVISAO.PERCDESCFINNFORC, MAF_FORNECDIVISAO.PZOMEDATRASO, MAF_FORNECDIVISAO.PZOMEDVISITAREP, MAF_FORNECDIVISAO.PZOESTQSEGURANCA, MAF_FORNECDIVISAO.VLRMINPEDIDO, MAF_FORNECDIVISAO.PESOMINPEDIDO, MAF_FORNECDIVISAO.NROVOLMINPEDIDO, MAF_FORNECDIVISAO.VLRMINPEDVENDA, MAF_FORNECDIVISAO.CLASSIFCOMERCABC, MAF_FORNECDIVISAO.INDREGRABLOQNF, MAF_FORNECDIVISAO.INDPERMDIGQTDCONFCARGA, MAF_FORNECDIVISAO.INDUSAVENDAMERCAVARIAENTR, MAX_DIVISAO.INDUSAVENDAMERCAVARIAENTR, MAF_FORNECDIVISAO.DTAVALIDADETABELA, MAF_FORNECDIVISAO.TIPODTADESCFINANC, MAF_FORNECDIVISAO.QTDDIASANTDESCFIN, MAF_FORNECDIVISAO.NROREGTRIBUTACAO, MAF_FORNECDIVISAO.USUALTERACAO, MAF_FORNECDIVISAO.DTAALTERACAO, MAF_FORNECDIVISAO.TIPOVLRMINPEDIDO, MAF_FORNECDIVISAO.NROREGTRIBUTIMPORTACAO, MAF_FORNECDIVISAO.NROFORMAPAGTODEV, MAF_FORNECDIVISAO.CLASSIFRANKING, MAF_FORNECDIVISAO.NROCONDPAGDEV, MAF_FORNECDIVISAO.INDCOBRATXADMBOLETO, MAF_FORNECDIVISAO.TIPCALCICMSSELO, MAF_FORNECDIVISAO.INDINDENIZAVARIA, MAF_FORNECDIVISAO.PERPISDIF, MAF_FORNECDIVISAO.PERCOFINSDIF, MAF_FORNECDIVISAO.PERALIQICMSSIMPLESNAC, MAF_FORNECDIVISAO.PERALIQICMSSIMPLESNACINDUST, MAF_FORNECDIVISAO.ALTERAUFTRIBURECEB, MAF_FORNECDIVISAO.TIPCUSTOAPROV, MAF_FORNECDIVISAO.PERDESPFIXA, MAF_FORNECDIVISAO.VLRMAXPERMALTERECEB, MAF_FORNECDIVISAO.PERMALTVLRSTRIBUTITEM, MAF_FORNECDIVISAO.PERCCOMPRC, MAF_FORNECDIVISAO.PERCCOMPRCPROMOC, MAF_FORNECDIVISAO.INDENVIAEMAILAUTOPEDCOMP, MAF_FORNECDIVISAO.INDENVIAEMAILAUTOAGEFORN, MAF_FORNECDIVISAO.TIPOEMISSAOETIQ, MAF_FORNECDIVISAO.PERCOMPROR, MAF_FORNECDIVISAO.PRAZOPAGTOCOMPROR, MAF_FORNECDIVISAO.QTDDIASASSOCANT, MAF_FORNECDIVISAO.INDGERADESCFINTITDEV, MAF_FORNECDIVISAO.INDCALCDESCSUFRAMA, MAF_FORNECDIVISAO.INDCALCULATAXASERVADMSUFRAMA, MAF_FORNECDIVISAO.PERPENALIZANFDEV, MAF_FORNECDIVISAO.TPOCALCDESCFINANC, MAF_FORNECDIVISAO.INDDESCVLRDEVOLVTIT, MAF_FORNECDIVISAO.DIACANCELPEDAUTO, MAF_FORNECDIVISAO.INDGRADECOMPRA, MAF_FORNECDIVISAO.INDRESOLUCAO13, MAF_FORNECDIVISAO.INDRESOLUCAO13INTRAUF, MAF_FORNECDIVISAO.INDRECEBNFXML, MAF_FORNECDIVISAO.INDRECEBNFXML, MAF_FORNECDIVISAO.INDCONSISTENCMXML, MAF_FORNECDIVISAO.INDBLOQTABCUSTOPED, MAF_FORNECDIVISAO.VLRMINDEVOLUCAO, MAF_FORNECDIVISAO.INDUTILCUSTOMESBASE, MAF_FORNECDIVISAO.PERCDESCDEVFORNEC, MAF_FORNECDIVISAO.SEQCONDCONDPRAZOPAGTO, MAF_FORNECDIVISAO.INDIMPTITULOXMLEDI, MAF_FORNECDIVISAO.CONDICAOFRETE, MAF_FORNECDIVISAO.INDGERACORDOPROMOC, MAF_FORNECDIVISAO.NROEMPRACORDOPROMOC, MAF_FORNECDIVISAO.INDASSUMEEMBQTDEMBXML, MAF_FORNECDIVISAO.INDICMSSTAPROVTOCREDICMS, MAF_FORNECDIVISAO.INDGERTITALTCUSTOAUTO, MAF_FORNECDIVISAO.INDCALCFRETECUSTODESC, MAF_FORNECDIVISAO.INDCALCDESPCUSTODESC, MAF_FORNECDIVISAO.INDSOMAFRETETOTALNF, MAF_FORNECDIVISAO.INDSOMADESPTOTALNF, MAF_FORNECDIVISAO.INDSOMAFRETEBASEIPI, MAF_FORNECDIVISAO.INDSOMADESPBASEIPI, MAF_FORNECDIVISAO.TIPODESPESANF, MAF_FORNECDIVISAO.INDGERAARQTEXTO, MAF_FORNECDIVISAO.INDSOMAFRETEBASEICMSST, MAF_FORNECDIVISAO.INDSOMAATRASFORNVENCTO, MAF_FORNECDIVISAO.APROVCOMPFORNECTITVENC, MAF_FORNECDIVISAO.DTABLOQCOMPFORNECTITVENC, MAF_FORNECDIVISAO.PERCALFUNRURAL, MAF_FORNECDIVISAO.IndProdRuralCPDFolh, MAF_FORNECDIVISAO.INDDESTINATARIORESSARC, MAF_FORNECDIVISAO.INDGERADEVRESSARCST, MAF_FORNECDIVISAO.INDUTILVALORNETICMS, MAF_FORNECDIVISAO.INDUTILVALORNETICMSST, MAF_FORNECDIVISAO.INDUTILVALORNETIPI, MAF_FORNECDIVISAO.INDUTILVALORNETPIS, MAF_FORNECDIVISAO.INDUTILVALORNETCOFINS, nvl( INDSOMASTTOTALNFDEV, 'S'), DECODE(INDSOMAFCPSTRESSARC,  
+    			'S', 'Sim',  
+    			'N', 'Não',  
+    			'Não Trata'), MAF_FORNECDIVISAO.CALCULOICMS, MAF_FORNECDIVISAO.INDTAGNROPEDIDOXML, MAF_FORNECDIVISAO.INDSOMAFCPSTRESSARC, MAF_FORNECDIVISAO.PERACRDIVERGNFPED                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+    from MAF_FORNECDIVISAO, MAX_DIVISAO Where  MAF_FORNECDIVISAO.SEQFORNECEDOR = :1                              
+    			AND MAF_FORNECDIVISAO.NRODIVISAO = MAX_DIVISAO.NRODIVISAO 
+Time: 09:43:43 Bind (in)   [125568600]  bind function                  session #
+    '1095'
+Time: 09:43:43 Execute     [125568600]  oexec                          session #1
+    select MAF_FORNECDIVISAO.NRODIVISAO, MAF_FORNECDIVISAO.INDPZOPAGAMENTO, MAF_FORNECDIVISAO.INDCANCPEDPEND, MAF_FORNECDIVISAO.SEQFORNECEDOR, MAF_FORNECDIVISAO.SEQCOMPRADOR, MAF_FORNECDIVISAO.STATUSGERAL, MAF_FORNECDIVISAO.INDREPLICACAO, MAF_FORNECDIVISAO.INDGEROUREPLICACAO, MAF_FORNECDIVISAO.EXGTABELACOMPRA, MAF_FORNECDIVISAO.INDLIBERACAOCOMPRA, MAF_FORNECDIVISAO.PZOPAGAMENTO, MAF_FORNECDIVISAO.TIPODTABASEVENCTO, MAF_FORNECDIVISAO.PZOVENCACORDO, MAF_FORNECDIVISAO.PZOMEDENTREGA, MAF_FORNECDIVISAO.PERCDESCFINACORDO, MAF_FORNECDIVISAO.PERCDESCFINNFORC, MAF_FORNECDIVISAO.PZOMEDATRASO, MAF_FORNECDIVISAO.PZOMEDVISITAREP, MAF_FORNECDIVISAO.PZOESTQSEGURANCA, MAF_FORNECDIVISAO.VLRMINPEDIDO, MAF_FORNECDIVISAO.PESOMINPEDIDO, MAF_FORNECDIVISAO.NROVOLMINPEDIDO, MAF_FORNECDIVISAO.VLRMINPEDVENDA, MAF_FORNECDIVISAO.CLASSIFCOMERCABC, MAF_FORNECDIVISAO.INDREGRABLOQNF, MAF_FORNECDIVISAO.INDPERMDIGQTDCONFCARGA, MAF_FORNECDIVISAO.INDUSAVENDAMERCAVARIAENTR, MAX_DIVISAO.INDUSAVENDAMERCAVARIAENTR, MAF_FORNECDIVISAO.DTAVALIDADETABELA, MAF_FORNECDIVISAO.TIPODTADESCFINANC, MAF_FORNECDIVISAO.QTDDIASANTDESCFIN, MAF_FORNECDIVISAO.NROREGTRIBUTACAO, MAF_FORNECDIVISAO.USUALTERACAO, MAF_FORNECDIVISAO.DTAALTERACAO, MAF_FORNECDIVISAO.TIPOVLRMINPEDIDO, MAF_FORNECDIVISAO.NROREGTRIBUTIMPORTACAO, MAF_FORNECDIVISAO.NROFORMAPAGTODEV, MAF_FORNECDIVISAO.CLASSIFRANKING, MAF_FORNECDIVISAO.NROCONDPAGDEV, MAF_FORNECDIVISAO.INDCOBRATXADMBOLETO, MAF_FORNECDIVISAO.TIPCALCICMSSELO, MAF_FORNECDIVISAO.INDINDENIZAVARIA, MAF_FORNECDIVISAO.PERPISDIF, MAF_FORNECDIVISAO.PERCOFINSDIF, MAF_FORNECDIVISAO.PERALIQICMSSIMPLESNAC, MAF_FORNECDIVISAO.PERALIQICMSSIMPLESNACINDUST, MAF_FORNECDIVISAO.ALTERAUFTRIBURECEB, MAF_FORNECDIVISAO.TIPCUSTOAPROV, MAF_FORNECDIVISAO.PERDESPFIXA, MAF_FORNECDIVISAO.VLRMAXPERMALTERECEB, MAF_FORNECDIVISAO.PERMALTVLRSTRIBUTITEM, MAF_FORNECDIVISAO.PERCCOMPRC, MAF_FORNECDIVISAO.PERCCOMPRCPROMOC, MAF_FORNECDIVISAO.INDENVIAEMAILAUTOPEDCOMP, MAF_FORNECDIVISAO.INDENVIAEMAILAUTOAGEFORN, MAF_FORNECDIVISAO.TIPOEMISSAOETIQ, MAF_FORNECDIVISAO.PERCOMPROR, MAF_FORNECDIVISAO.PRAZOPAGTOCOMPROR, MAF_FORNECDIVISAO.QTDDIASASSOCANT, MAF_FORNECDIVISAO.INDGERADESCFINTITDEV, MAF_FORNECDIVISAO.INDCALCDESCSUFRAMA, MAF_FORNECDIVISAO.INDCALCULATAXASERVADMSUFRAMA, MAF_FORNECDIVISAO.PERPENALIZANFDEV, MAF_FORNECDIVISAO.TPOCALCDESCFINANC, MAF_FORNECDIVISAO.INDDESCVLRDEVOLVTIT, MAF_FORNECDIVISAO.DIACANCELPEDAUTO, MAF_FORNECDIVISAO.INDGRADECOMPRA, MAF_FORNECDIVISAO.INDRESOLUCAO13, MAF_FORNECDIVISAO.INDRESOLUCAO13INTRAUF, MAF_FORNECDIVISAO.INDRECEBNFXML, MAF_FORNECDIVISAO.INDRECEBNFXML, MAF_FORNECDIVISAO.INDCONSISTENCMXML, MAF_FORNECDIVISAO.INDBLOQTABCUSTOPED, MAF_FORNECDIVISAO.VLRMINDEVOLUCAO, MAF_FORNECDIVISAO.INDUTILCUSTOMESBASE, MAF_FORNECDIVISAO.PERCDESCDEVFORNEC, MAF_FORNECDIVISAO.SEQCONDCONDPRAZOPAGTO, MAF_FORNECDIVISAO.INDIMPTITULOXMLEDI, MAF_FORNECDIVISAO.CONDICAOFRETE, MAF_FORNECDIVISAO.INDGERACORDOPROMOC, MAF_FORNECDIVISAO.NROEMPRACORDOPROMOC, MAF_FORNECDIVISAO.INDASSUMEEMBQTDEMBXML, MAF_FORNECDIVISAO.INDICMSSTAPROVTOCREDICMS, MAF_FORNECDIVISAO.INDGERTITALTCUSTOAUTO, MAF_FORNECDIVISAO.INDCALCFRETECUSTODESC, MAF_FORNECDIVISAO.INDCALCDESPCUSTODESC, MAF_FORNECDIVISAO.INDSOMAFRETETOTALNF, MAF_FORNECDIVISAO.INDSOMADESPTOTALNF, MAF_FORNECDIVISAO.INDSOMAFRETEBASEIPI, MAF_FORNECDIVISAO.INDSOMADESPBASEIPI, MAF_FORNECDIVISAO.TIPODESPESANF, MAF_FORNECDIVISAO.INDGERAARQTEXTO, MAF_FORNECDIVISAO.INDSOMAFRETEBASEICMSST, MAF_FORNECDIVISAO.INDSOMAATRASFORNVENCTO, MAF_FORNECDIVISAO.APROVCOMPFORNECTITVENC, MAF_FORNECDIVISAO.DTABLOQCOMPFORNECTITVENC, MAF_FORNECDIVISAO.PERCALFUNRURAL, MAF_FORNECDIVISAO.IndProdRuralCPDFolh, MAF_FORNECDIVISAO.INDDESTINATARIORESSARC, MAF_FORNECDIVISAO.INDGERADEVRESSARCST, MAF_FORNECDIVISAO.INDUTILVALORNETICMS, MAF_FORNECDIVISAO.INDUTILVALORNETICMSST, MAF_FORNECDIVISAO.INDUTILVALORNETIPI, MAF_FORNECDIVISAO.INDUTILVALORNETPIS, MAF_FORNECDIVISAO.INDUTILVALORNETCOFINS, nvl( INDSOMASTTOTALNFDEV, 'S'), DECODE(INDSOMAFCPSTRESSARC,  
+    			'S', 'Sim',  
+    			'N', 'Não',  
+    			'Não Trata'), MAF_FORNECDIVISAO.CALCULOICMS, MAF_FORNECDIVISAO.INDTAGNROPEDIDOXML, MAF_FORNECDIVISAO.INDSOMAFCPSTRESSARC, MAF_FORNECDIVISAO.PERACRDIVERGNFPED                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+    from MAF_FORNECDIVISAO, MAX_DIVISAO Where  MAF_FORNECDIVISAO.SEQFORNECEDOR = :1                              
+    			AND MAF_FORNECDIVISAO.NRODIVISAO = MAX_DIVISAO.NRODIVISAO 
+Time: 09:43:43 Bind (out)  [125568600]  bind function                  session #
+    '1095'
+Time: 09:43:43 Prepare     [123254192]  oparse                         session #1
+    Select DIVISAO, APELIDO From MAX_DIVISAO, MAX_COMPRADOR 
+    	Where NRODIVISAO = :1             
+    	And SEQCOMPRADOR = :2               
+                                            
+    	Order By DIVISAO Asc
+Time: 09:43:43 Bind (in)   [123254192]  bind function                  session #
+    '1'
+Time: 09:43:43 Bind (in)   [123254192]  bind function                  session #
+    '4'
+Time: 09:43:43 Execute     [123254192]  oexec                          session #1
+    Select DIVISAO, APELIDO From MAX_DIVISAO, MAX_COMPRADOR 
+    	Where NRODIVISAO = :1             
+    	And SEQCOMPRADOR = :2               
+                                            
+    	Order By DIVISAO Asc
+Time: 09:43:43 Bind (out)  [123254192]  bind function                  session #
+    '1'
+Time: 09:43:43 Bind (out)  [123254192]  bind function                  session #
+    '4'
+Time: 09:43:43 Prepare     [123254192]  oparse                         session #1
+     
+    	select 	DESCRICAO 
+    	from 	MAP_REGIMETRIBUTACAO 
+    	where 	 		NROREGTRIBUTACAO = :1                                               
+    		AND 	NVL(STATUS,'A') = 'A'  
+                                                         
+Time: 09:43:43 Bind (in)   [123254192]  bind function                  session #
+    '0'
+Time: 09:43:43 Execute     [123254192]  oexec                          session #1
+     
+    	select 	DESCRICAO 
+    	from 	MAP_REGIMETRIBUTACAO 
+    	where 	 		NROREGTRIBUTACAO = :1                                               
+    		AND 	NVL(STATUS,'A') = 'A'  
+                                                         
+Time: 09:43:43 Bind (out)  [123254192]  bind function                  session #
+    '0'
+Time: 09:43:43 Prepare     [123254192]  oparse                         session #1
+    	Select 	FORMAPAGTO 
+            		From 	MRL_FORMAPAGTO 
+            		Where 	NROFORMAPAGTO = :1                                    
+            	                                          
+Time: 09:43:43 Bind (in)   [123254192]  bind function                  session #
+    '4'
+Time: 09:43:43 Execute     [123254192]  oexec                          session #1
+    	Select 	FORMAPAGTO 
+            		From 	MRL_FORMAPAGTO 
+            		Where 	NROFORMAPAGTO = :1                                    
+            	                                          
+Time: 09:43:43 Bind (out)  [123254192]  bind function                  session #
+    '4'
+Time: 09:43:43 Prepare     [123254192]  oparse                         session #1
+    	Select 	DESCCONDICAOPAGTO 
+            		From 	MAD_CONDICAOPAGTO 
+            		Where 	NROCONDICAOPAGTO = :1                                     
+            	                                         
+Time: 09:43:43 Bind (in)   [123254192]  bind function                  session #
+    '28'
+Time: 09:43:43 Execute     [123254192]  oexec                          session #1
+    	Select 	DESCCONDICAOPAGTO 
+            		From 	MAD_CONDICAOPAGTO 
+            		Where 	NROCONDICAOPAGTO = :1                                     
+            	                                         
+Time: 09:43:43 Bind (out)  [123254192]  bind function                  session #
+    '28'
+Time: 09:43:43 Prepare     [123254192]  oparse                         session #1
+    SELECT  A.SEQCONDCONDPRAZOPAGTO || ' - ' || A.DESCRICAO 
+    		                                   
+    			FROM	MRL_CONDPRAZOPAGTO A 
+    			WHERE	A.SEQCONDCONDPRAZOPAGTO = :1                             
+Time: 09:43:43 Bind (in)   [123254192]  bind function                  session #
+    Null
+Time: 09:43:43 Execute     [123254192]  oexec                          session #1
+    SELECT  A.SEQCONDCONDPRAZOPAGTO || ' - ' || A.DESCRICAO 
+    		                                   
+    			FROM	MRL_CONDPRAZOPAGTO A 
+    			WHERE	A.SEQCONDCONDPRAZOPAGTO = :1                             
+Time: 09:43:43 Bind (out)  [123254192]  bind function                  session #
+    Null
+Time: 09:43:43 Prepare     [49419808]   oparse                         session #1
+    select MAX_EMPRESAEDI.NOMEEDI, MAX_EMPRESAEDI.LAYOUT, MAX_EMPRESAEDI.NROEMPRESA, MAF_FORNECEDI.SEQFORNECEDOR, MAF_FORNECEDI.CODEDIFORNEC, MAF_FORNECEDI.PASTAIMPORTACAO, MAF_FORNECEDI.PASTAEXPORTACAO, MAF_FORNECEDI.DIRETIMPORTADOS, MAF_FORNECEDI.DIRETREJEITADOS, MAF_FORNECEDI.STATUS, MAF_FORNECEDI.INDREPLICACAO, MAF_FORNECEDI.INDGEROUREPLICACAO, MAX_EMPRESAEDI.STATUS, MAF_FORNECEDI.TIPOCODPRODUTO, MAF_FORNECEDI.INDSUBTRAIDCTOFORNEC, MAF_FORNECEDI.URLWEBSERVICE, MAF_FORNECEDI.INDSOMASTIPI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+    from MAF_FORNECEDI, MAX_EMPRESAEDI, MAX_EDI Where  MAX_EMPRESAEDI.NROEMPRESA 	= MAF_FORNECEDI.NROEMPRESA(+) 
+    		AND    	MAX_EMPRESAEDI.NOMEEDI     	= MAF_FORNECEDI.NOMEEDI(+) 
+    		AND    	MAX_EMPRESAEDI.LAYOUT      	= MAF_FORNECEDI.LAYOUT(+) 
+    		AND    	MAX_EMPRESAEDI.NOMEEDI     	= MAX_EDI.NOMEEDI 
+    		AND    	MAX_EMPRESAEDI.LAYOUT      	= MAX_EDI.LAYOUT 
+    		AND	MAX_EDI.STATUS			= 'A' 
+    		AND	MAX_EMPRESAEDI.NROEMPRESA 	= :1                           
+    		AND	MAF_FORNECEDI.SEQFORNECEDOR(+) = :2                              
+Time: 09:43:43 Bind (in)   [49419808]   bind function                  session #
+    Null
+Time: 09:43:43 Bind (in)   [49419808]   bind function                  session #
+    '1095'
+Time: 09:43:43 Execute     [49419808]   oexec                          session #1
+    select MAX_EMPRESAEDI.NOMEEDI, MAX_EMPRESAEDI.LAYOUT, MAX_EMPRESAEDI.NROEMPRESA, MAF_FORNECEDI.SEQFORNECEDOR, MAF_FORNECEDI.CODEDIFORNEC, MAF_FORNECEDI.PASTAIMPORTACAO, MAF_FORNECEDI.PASTAEXPORTACAO, MAF_FORNECEDI.DIRETIMPORTADOS, MAF_FORNECEDI.DIRETREJEITADOS, MAF_FORNECEDI.STATUS, MAF_FORNECEDI.INDREPLICACAO, MAF_FORNECEDI.INDGEROUREPLICACAO, MAX_EMPRESAEDI.STATUS, MAF_FORNECEDI.TIPOCODPRODUTO, MAF_FORNECEDI.INDSUBTRAIDCTOFORNEC, MAF_FORNECEDI.URLWEBSERVICE, MAF_FORNECEDI.INDSOMASTIPI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+    from MAF_FORNECEDI, MAX_EMPRESAEDI, MAX_EDI Where  MAX_EMPRESAEDI.NROEMPRESA 	= MAF_FORNECEDI.NROEMPRESA(+) 
+    		AND    	MAX_EMPRESAEDI.NOMEEDI     	= MAF_FORNECEDI.NOMEEDI(+) 
+    		AND    	MAX_EMPRESAEDI.LAYOUT      	= MAF_FORNECEDI.LAYOUT(+) 
+    		AND    	MAX_EMPRESAEDI.NOMEEDI     	= MAX_EDI.NOMEEDI 
+    		AND    	MAX_EMPRESAEDI.LAYOUT      	= MAX_EDI.LAYOUT 
+    		AND	MAX_EDI.STATUS			= 'A' 
+    		AND	MAX_EMPRESAEDI.NROEMPRESA 	= :1                           
+    		AND	MAF_FORNECEDI.SEQFORNECEDOR(+) = :2                              
+Time: 09:43:43 Bind (out)  [49419808]   bind function                  session #
+    Null
+Time: 09:43:43 Bind (out)  [49419808]   bind function                  session #
+    '1095'
+Time: 09:43:43 Prepare     [126760344]  oparse                         session #1
+    select MAD_CONDICAOPAGTO.NROCONDICAOPAGTO, MAD_CONDICAOPAGTO.DESCCONDICAOPAGTO                                                                                                               
+    from MAD_CONDICAOPAGTO 
+    where  
+    	    MAD_CONDICAOPAGTO.STATUS = 'A' 
+    order by NROCONDICAOPAGTO
+Time: 09:43:43 Execute     [126760344]  oexec                          session #1
+    select MAD_CONDICAOPAGTO.NROCONDICAOPAGTO, MAD_CONDICAOPAGTO.DESCCONDICAOPAGTO                                                                                                               
+    from MAD_CONDICAOPAGTO 
+    where  
+    	    MAD_CONDICAOPAGTO.STATUS = 'A' 
+    order by NROCONDICAOPAGTO
+Time: 09:43:43 Prepare     [123254192]  oparse                         session #1
+     
+    	Select 	*  
+    	  from 	MAF_FORNECCOND 
+    	 Where 	SEQFORNECEDOR = :1                              
+    	   And	NROEMPRESA = :2                           
+    	   And 	NROCONDICAOPAGTO = :3                                     
+Time: 09:43:43 Bind (in)   [123254192]  bind function                  session #
+    '1095'
+Time: 09:43:43 Bind (in)   [123254192]  bind function                  session #
+    Null
+Time: 09:43:43 Bind (in)   [123254192]  bind function                  session #
+    '0'
+Time: 09:43:43 Execute     [123254192]  oexec                          session #1
+     
+    	Select 	*  
+    	  from 	MAF_FORNECCOND 
+    	 Where 	SEQFORNECEDOR = :1                              
+    	   And	NROEMPRESA = :2                           
+    	   And 	NROCONDICAOPAGTO = :3                                     
+Time: 09:43:43 Bind (out)  [123254192]  bind function                  session #
+    '1095'
+Time: 09:43:43 Bind (out)  [123254192]  bind function                  session #
+    Null
+Time: 09:43:43 Bind (out)  [123254192]  bind function                  session #
+    '0'
+Time: 09:43:43 Prepare     [123254192]  oparse                         session #1
+     
+    	Select 	*  
+    	  from 	MAF_FORNECCOND 
+    	 Where 	SEQFORNECEDOR = :1                              
+    	   And	NROEMPRESA = :2                           
+    	   And 	NROCONDICAOPAGTO = :3                                     
+Time: 09:43:43 Bind (in)   [123254192]  bind function                  session #
+    '1095'
+Time: 09:43:43 Bind (in)   [123254192]  bind function                  session #
+    Null
+Time: 09:43:43 Bind (in)   [123254192]  bind function                  session #
+    '5'
+Time: 09:43:43 Execute     [123254192]  oexec                          session #1
+     
+    	Select 	*  
+    	  from 	MAF_FORNECCOND 
+    	 Where 	SEQFORNECEDOR = :1                              
+    	   And	NROEMPRESA = :2                           
+    	   And 	NROCONDICAOPAGTO = :3                                     
+Time: 09:43:43 Bind (out)  [123254192]  bind function                  session #
+    '1095'
+Time: 09:43:43 Bind (out)  [123254192]  bind function                  session #
+    Null
+Time: 09:43:43 Bind (out)  [123254192]  bind function                  session #
+    '5'
+Time: 09:43:43 Prepare     [123254192]  oparse                         session #1
+     
+    	Select 	*  
+    	  from 	MAF_FORNECCOND 
+    	 Where 	SEQFORNECEDOR = :1                              
+    	   And	NROEMPRESA = :2                           
+    	   And 	NROCONDICAOPAGTO = :3                                     
+Time: 09:43:43 Bind (in)   [123254192]  bind function                  session #
+    '1095'
+Time: 09:43:43 Bind (in)   [123254192]  bind function                  session #
+    Null
+Time: 09:43:43 Bind (in)   [123254192]  bind function                  session #
+    '6'
+Time: 09:43:44 Execute     [123254192]  oexec                          session #1
+     
+    	Select 	*  
+    	  from 	MAF_FORNECCOND 
+    	 Where 	SEQFORNECEDOR = :1                              
+    	   And	NROEMPRESA = :2                           
+    	   And 	NROCONDICAOPAGTO = :3                                     
+Time: 09:43:44 Bind (out)  [123254192]  bind function                  session #
+    '1095'
+Time: 09:43:44 Bind (out)  [123254192]  bind function                  session #
+    Null
+Time: 09:43:44 Bind (out)  [123254192]  bind function                  session #
+    '6'
+Time: 09:43:44 Prepare     [123254192]  oparse                         session #1
+     
+    	Select 	*  
+    	  from 	MAF_FORNECCOND 
+    	 Where 	SEQFORNECEDOR = :1                              
+    	   And	NROEMPRESA = :2                           
+    	   And 	NROCONDICAOPAGTO = :3                                     
+Time: 09:43:44 Bind (in)   [123254192]  bind function                  session #
+    '1095'
+Time: 09:43:44 Bind (in)   [123254192]  bind function                  session #
+    Null
+Time: 09:43:44 Bind (in)   [123254192]  bind function                  session #
+    '7'
+Time: 09:43:44 Execute     [123254192]  oexec                          session #1
+     
+    	Select 	*  
+    	  from 	MAF_FORNECCOND 
+    	 Where 	SEQFORNECEDOR = :1                              
+    	   And	NROEMPRESA = :2                           
+    	   And 	NROCONDICAOPAGTO = :3                                     
+Time: 09:43:44 Bind (out)  [123254192]  bind function                  session #
+    '1095'
+Time: 09:43:44 Bind (out)  [123254192]  bind function                  session #
+    Null
+Time: 09:43:44 Bind (out)  [123254192]  bind function                  session #
+    '7'
+Time: 09:43:44 Prepare     [123254192]  oparse                         session #1
+     
+    	Select 	*  
+    	  from 	MAF_FORNECCOND 
+    	 Where 	SEQFORNECEDOR = :1                              
+    	   And	NROEMPRESA = :2                           
+    	   And 	NROCONDICAOPAGTO = :3                                     
+Time: 09:43:44 Bind (in)   [123254192]  bind function                  session #
+    '1095'
+Time: 09:43:44 Bind (in)   [123254192]  bind function                  session #
+    Null
+Time: 09:43:44 Bind (in)   [123254192]  bind function                  session #
+    '9'
+Time: 09:43:44 Execute     [123254192]  oexec                          session #1
+     
+    	Select 	*  
+    	  from 	MAF_FORNECCOND 
+    	 Where 	SEQFORNECEDOR = :1                              
+    	   And	NROEMPRESA = :2                           
+    	   And 	NROCONDICAOPAGTO = :3                                     
+Time: 09:43:44 Bind (out)  [123254192]  bind function                  session #
+    '1095'
+Time: 09:43:44 Bind (out)  [123254192]  bind function                  session #
+    Null
+Time: 09:43:44 Bind (out)  [123254192]  bind function                  session #
+    '9'
+Time: 09:43:44 Prepare     [123254192]  oparse                         session #1
+     
+    	Select 	*  
+    	  from 	MAF_FORNECCOND 
+    	 Where 	SEQFORNECEDOR = :1                              
+    	   And	NROEMPRESA = :2                           
+    	   And 	NROCONDICAOPAGTO = :3                                     
+Time: 09:43:44 Bind (in)   [123254192]  bind function                  session #
+    '1095'
+Time: 09:43:44 Bind (in)   [123254192]  bind function                  session #
+    Null
+Time: 09:43:44 Bind (in)   [123254192]  bind function                  session #
+    '10'
+Time: 09:43:44 Execute     [123254192]  oexec                          session #1
+     
+    	Select 	*  
+    	  from 	MAF_FORNECCOND 
+    	 Where 	SEQFORNECEDOR = :1                              
+    	   And	NROEMPRESA = :2                           
+    	   And 	NROCONDICAOPAGTO = :3                                     
+Time: 09:43:44 Bind (out)  [123254192]  bind function                  session #
+    '1095'
+Time: 09:43:44 Bind (out)  [123254192]  bind function                  session #
+    Null
+Time: 09:43:44 Bind (out)  [123254192]  bind function                  session #
+    '10'
+Time: 09:43:44 Prepare     [123254192]  oparse                         session #1
+     
+    	Select 	*  
+    	  from 	MAF_FORNECCOND 
+    	 Where 	SEQFORNECEDOR = :1                              
+    	   And	NROEMPRESA = :2                           
+    	   And 	NROCONDICAOPAGTO = :3                                     
+Time: 09:43:44 Bind (in)   [123254192]  bind function                  session #
+    '1095'
+Time: 09:43:44 Bind (in)   [123254192]  bind function                  session #
+    Null
+Time: 09:43:44 Bind (in)   [123254192]  bind function                  session #
+    '14'
+Time: 09:43:44 Execute     [123254192]  oexec                          session #1
+     
+    	Select 	*  
+    	  from 	MAF_FORNECCOND 
+    	 Where 	SEQFORNECEDOR = :1                              
+    	   And	NROEMPRESA = :2                           
+    	   And 	NROCONDICAOPAGTO = :3                                     
+Time: 09:43:44 Bind (out)  [123254192]  bind function                  session #
+    '1095'
+Time: 09:43:44 Bind (out)  [123254192]  bind function                  session #
+    Null
+Time: 09:43:44 Bind (out)  [123254192]  bind function                  session #
+    '14'
+Time: 09:43:44 Prepare     [126584792]  oparse                         session #1
+    select MAF_FORNECSEGTO.SEQFORNECEDOR, MAF_FORNECSEGTO.NROSEGFORNEC, MAF_SEGTOFORNEC.DESCRICAO, MAF_FORNECSEGTO.STATUS                                                                                                                                                                                      
+    from MAF_FORNECSEGTO, MAF_SEGTOFORNEC 
+    where MAF_FORNECSEGTO.NROSEGFORNEC = MAF_SEGTOFORNEC.NROSEGFORNEC 
+    		AND 	MAF_FORNECSEGTO.SEQFORNECEDOR = :1                              
+Time: 09:43:44 Bind (in)   [126584792]  bind function                  session #
+    '1095'
+Time: 09:43:44 Execute     [126584792]  oexec                          session #1
+    select MAF_FORNECSEGTO.SEQFORNECEDOR, MAF_FORNECSEGTO.NROSEGFORNEC, MAF_SEGTOFORNEC.DESCRICAO, MAF_FORNECSEGTO.STATUS                                                                                                                                                                                      
+    from MAF_FORNECSEGTO, MAF_SEGTOFORNEC 
+    where MAF_FORNECSEGTO.NROSEGFORNEC = MAF_SEGTOFORNEC.NROSEGFORNEC 
+    		AND 	MAF_FORNECSEGTO.SEQFORNECEDOR = :1                              
+Time: 09:43:44 Bind (out)  [126584792]  bind function                  session #
+    '1095'
+Time: 09:43:44 Prepare     [49599712]   oparse                         session #1
+    select MAF_FORNECEMP.SEQFORNECEDOR, MAF_FORNECEMP.NROEMPRESA, MAF_FORNECEMP.NRODIASNIVELSERVICO, MAF_FORNECEMP.PZOACRESENTREGA, MAF_FORNECEMP.BLOQCOMPRA, MAF_FORNECEMP.INDEMITENFDEV, MAF_FORNECEMP.CGOPADRAODEVOLUCAO, MAF_FORNECEMP.RESPACORDONOME, MAF_FORNECEMP.RESPACORDODOCTO, MAF_FORNECEMP.RESPACORDOCPFCONTATO, MAF_FORNECEMP.RESCARGOCONTATO, MAF_FORNECEMP.NOMECONTATOEMAILACORDO, MAF_FORNECEMP.EMAILCONTATOACORDO, MAF_FORNECEMP.INDREPLICACAO, MAF_FORNECEMP.INDGEROUREPLICACAO, MAF_FORNECEMP.USUALTERACAO, MAF_FORNECEMP.DTAALTERACAO, MAF_FORNECEMP.INDMOBCOMPCONSOLIDADA, MAF_FORNECEMP.NROREGTRIBUTACAO, MAF_FORNECEMP.VLRMINPEDIDO, MAF_FORNECEMP.INDCALCULOICMS, MAF_FORNECEMP.NROREGTRIBUTIMPORTACAO, MAF_FORNECEMP.TIPOVLRMINPEDIDO                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+    from MAF_FORNECEMP, MAX_EMPRESA 
+    where MAF_FORNECEMP.SEQFORNECEDOR = :1                               
+    		AND 	MAX_EMPRESA.NROEMPRESA = MAF_FORNECEMP.NROEMPRESA 
+    order by MAX_EMPRESA.NOMEREDUZIDO
+Time: 09:43:44 Bind (in)   [49599712]   bind function                  session #
+    '1095'
+Time: 09:43:44 Execute     [49599712]   oexec                          session #1
+    select MAF_FORNECEMP.SEQFORNECEDOR, MAF_FORNECEMP.NROEMPRESA, MAF_FORNECEMP.NRODIASNIVELSERVICO, MAF_FORNECEMP.PZOACRESENTREGA, MAF_FORNECEMP.BLOQCOMPRA, MAF_FORNECEMP.INDEMITENFDEV, MAF_FORNECEMP.CGOPADRAODEVOLUCAO, MAF_FORNECEMP.RESPACORDONOME, MAF_FORNECEMP.RESPACORDODOCTO, MAF_FORNECEMP.RESPACORDOCPFCONTATO, MAF_FORNECEMP.RESCARGOCONTATO, MAF_FORNECEMP.NOMECONTATOEMAILACORDO, MAF_FORNECEMP.EMAILCONTATOACORDO, MAF_FORNECEMP.INDREPLICACAO, MAF_FORNECEMP.INDGEROUREPLICACAO, MAF_FORNECEMP.USUALTERACAO, MAF_FORNECEMP.DTAALTERACAO, MAF_FORNECEMP.INDMOBCOMPCONSOLIDADA, MAF_FORNECEMP.NROREGTRIBUTACAO, MAF_FORNECEMP.VLRMINPEDIDO, MAF_FORNECEMP.INDCALCULOICMS, MAF_FORNECEMP.NROREGTRIBUTIMPORTACAO, MAF_FORNECEMP.TIPOVLRMINPEDIDO                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+    from MAF_FORNECEMP, MAX_EMPRESA 
+    where MAF_FORNECEMP.SEQFORNECEDOR = :1                               
+    		AND 	MAX_EMPRESA.NROEMPRESA = MAF_FORNECEMP.NROEMPRESA 
+    order by MAX_EMPRESA.NOMEREDUZIDO
+Time: 09:43:44 Bind (out)  [49599712]   bind function                  session #
+    '1095'
+Time: 09:43:44 Prepare     [123254192]  oparse                         session #1
+    Select NOMEREDUZIDO  
+    		from MAX_EMPRESA 
+                                   Where  NROEMPRESA = :1                                        
+                                                                               
+Time: 09:43:44 Bind (in)   [123254192]  bind function                  session #
+    '30'
+Time: 09:43:44 Execute     [123254192]  oexec                          session #1
+    Select NOMEREDUZIDO  
+    		from MAX_EMPRESA 
+                                   Where  NROEMPRESA = :1                                        
+                                                                               
+Time: 09:43:44 Bind (out)  [123254192]  bind function                  session #
+    '30'
+Time: 09:43:44 Prepare     [48568152]   oparse                         session #
+    SELECT DESCRICAO FROM MAP_REGIMETRIBUTACAO WHERE STATUS = 'A'
+Time: 09:43:44 Execute     [48568152]   oexec                          session #
+    SELECT DESCRICAO FROM MAP_REGIMETRIBUTACAO WHERE STATUS = 'A'
+Time: 09:43:44 Prepare     [126992080]  oparse                         session #1
+    SELECT A.DESCRICAO 
+    		                                    
+    			FROM   MAP_REGIMETRIBUTACAO A 
+    			WHERE  A.NROREGTRIBUTACAO = :1                               
+Time: 09:43:44 Bind (in)   [126992080]  bind function                  session #
+    Null
+Time: 09:43:44 Execute     [126992080]  oexec                          session #1
+    SELECT A.DESCRICAO 
+    		                                    
+    			FROM   MAP_REGIMETRIBUTACAO A 
+    			WHERE  A.NROREGTRIBUTACAO = :1                               
+Time: 09:43:44 Bind (out)  [126992080]  bind function                  session #
+    Null
+Time: 09:43:44 Prepare     [48568152]   oparse                         session #
+    SELECT DESCRICAO FROM MAP_REGIMETRIBUTACAO WHERE STATUS = 'A'
+Time: 09:43:44 Execute     [48568152]   oexec                          session #
+    SELECT DESCRICAO FROM MAP_REGIMETRIBUTACAO WHERE STATUS = 'A'
+Time: 09:43:44 Prepare     [126992080]  oparse                         session #1
+    SELECT A.DESCRICAO 
+    		                                          
+    			FROM   MAP_REGIMETRIBUTACAO A 
+    			WHERE  A.NROREGTRIBUTACAO = :1                                 
+Time: 09:43:44 Bind (in)   [126992080]  bind function                  session #
+    Null
+Time: 09:43:44 Execute     [126992080]  oexec                          session #1
+    SELECT A.DESCRICAO 
+    		                                          
+    			FROM   MAP_REGIMETRIBUTACAO A 
+    			WHERE  A.NROREGTRIBUTACAO = :1                                 
+Time: 09:43:44 Bind (out)  [126992080]  bind function                  session #
+    Null
+Time: 09:43:44 Prepare     [126958048]  oparse                         session #1
+    select MAX_CODGERALOPER.CODGERALOPER, MAX_CODGERALOPER.DESCRICAO                                                                              
+    from MAX_CODGERALOPER  
+     
+    where 	INDRESTRICAOFORNECEDOR = 'S' 
+    				and STATUS = 'A'  
+     
+    order by DESCRICAO
+Time: 09:43:44 Execute     [126958048]  oexec                          session #1
+    select MAX_CODGERALOPER.CODGERALOPER, MAX_CODGERALOPER.DESCRICAO                                                                              
+    from MAX_CODGERALOPER  
+     
+    where 	INDRESTRICAOFORNECEDOR = 'S' 
+    				and STATUS = 'A'  
+     
+    order by DESCRICAO
+Time: 09:43:44 Prepare     [126992080]  oparse                         session #1
+    	select 	STATUS, 1 
+    		                                                          
+    			from 	MAF_FORNECEDORCGO 
+    			where 	SEQFORNECEDOR = :1                              
+    			and 	CODGERALOPER = :2                               
+Time: 09:43:44 Bind (in)   [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:44 Bind (in)   [126992080]  bind function                  session #
+    '485'
+Time: 09:43:44 Execute     [126992080]  oexec                          session #1
+    	select 	STATUS, 1 
+    		                                                          
+    			from 	MAF_FORNECEDORCGO 
+    			where 	SEQFORNECEDOR = :1                              
+    			and 	CODGERALOPER = :2                               
+Time: 09:43:44 Bind (out)  [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:44 Bind (out)  [126992080]  bind function                  session #
+    '485'
+Time: 09:43:44 Prepare     [126992080]  oparse                         session #1
+    	select 	STATUS, 1 
+    		                                                          
+    			from 	MAF_FORNECEDORCGO 
+    			where 	SEQFORNECEDOR = :1                              
+    			and 	CODGERALOPER = :2                               
+Time: 09:43:44 Bind (in)   [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:44 Bind (in)   [126992080]  bind function                  session #
+    '484'
+Time: 09:43:44 Execute     [126992080]  oexec                          session #1
+    	select 	STATUS, 1 
+    		                                                          
+    			from 	MAF_FORNECEDORCGO 
+    			where 	SEQFORNECEDOR = :1                              
+    			and 	CODGERALOPER = :2                               
+Time: 09:43:44 Bind (out)  [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:44 Bind (out)  [126992080]  bind function                  session #
+    '484'
+Time: 09:43:44 Prepare     [126992080]  oparse                         session #1
+    	select 	STATUS, 1 
+    		                                                          
+    			from 	MAF_FORNECEDORCGO 
+    			where 	SEQFORNECEDOR = :1                              
+    			and 	CODGERALOPER = :2                               
+Time: 09:43:44 Bind (in)   [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:44 Bind (in)   [126992080]  bind function                  session #
+    '407'
+Time: 09:43:44 Execute     [126992080]  oexec                          session #1
+    	select 	STATUS, 1 
+    		                                                          
+    			from 	MAF_FORNECEDORCGO 
+    			where 	SEQFORNECEDOR = :1                              
+    			and 	CODGERALOPER = :2                               
+Time: 09:43:44 Bind (out)  [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:44 Bind (out)  [126992080]  bind function                  session #
+    '407'
+Time: 09:43:44 Prepare     [126992080]  oparse                         session #1
+    	select 	STATUS, 1 
+    		                                                          
+    			from 	MAF_FORNECEDORCGO 
+    			where 	SEQFORNECEDOR = :1                              
+    			and 	CODGERALOPER = :2                               
+Time: 09:43:44 Bind (in)   [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:44 Bind (in)   [126992080]  bind function                  session #
+    '425'
+Time: 09:43:44 Execute     [126992080]  oexec                          session #1
+    	select 	STATUS, 1 
+    		                                                          
+    			from 	MAF_FORNECEDORCGO 
+    			where 	SEQFORNECEDOR = :1                              
+    			and 	CODGERALOPER = :2                               
+Time: 09:43:44 Bind (out)  [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:44 Bind (out)  [126992080]  bind function                  session #
+    '425'
+Time: 09:43:45 Prepare     [126992080]  oparse                         session #1
+    	select 	STATUS, 1 
+    		                                                          
+    			from 	MAF_FORNECEDORCGO 
+    			where 	SEQFORNECEDOR = :1                              
+    			and 	CODGERALOPER = :2                               
+Time: 09:43:45 Bind (in)   [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:45 Bind (in)   [126992080]  bind function                  session #
+    '441'
+Time: 09:43:45 Execute     [126992080]  oexec                          session #1
+    	select 	STATUS, 1 
+    		                                                          
+    			from 	MAF_FORNECEDORCGO 
+    			where 	SEQFORNECEDOR = :1                              
+    			and 	CODGERALOPER = :2                               
+Time: 09:43:45 Bind (out)  [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:45 Bind (out)  [126992080]  bind function                  session #
+    '441'
+Time: 09:43:45 Prepare     [126992080]  oparse                         session #1
+    	select 	STATUS, 1 
+    		                                                          
+    			from 	MAF_FORNECEDORCGO 
+    			where 	SEQFORNECEDOR = :1                              
+    			and 	CODGERALOPER = :2                               
+Time: 09:43:45 Bind (in)   [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:45 Bind (in)   [126992080]  bind function                  session #
+    '423'
+Time: 09:43:45 Execute     [126992080]  oexec                          session #1
+    	select 	STATUS, 1 
+    		                                                          
+    			from 	MAF_FORNECEDORCGO 
+    			where 	SEQFORNECEDOR = :1                              
+    			and 	CODGERALOPER = :2                               
+Time: 09:43:45 Bind (out)  [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:45 Bind (out)  [126992080]  bind function                  session #
+    '423'
+Time: 09:43:45 Prepare     [126992080]  oparse                         session #1
+     
+    	SELECT 	AGENDA_DIAS_INTERVALO 
+                            
+    	FROM	MAF_FORNECEDOR 
+    	WHERE	SEQFORNECEDOR = :1                
+Time: 09:43:45 Bind (in)   [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:45 Execute     [126992080]  oexec                          session #1
+     
+    	SELECT 	AGENDA_DIAS_INTERVALO 
+                            
+    	FROM	MAF_FORNECEDOR 
+    	WHERE	SEQFORNECEDOR = :1                
+Time: 09:43:45 Bind (out)  [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:45 Prepare     [126992080]  oparse                         session #1
+    SELECT MODELOAFV || ' - ' || DESCRICAO                                        FROM MAD_MODELOAFV WHERE MODELOAFV = :1                               
+Time: 09:43:45 Bind (in)   [126992080]  bind function                  session #
+    Null
+Time: 09:43:45 Execute     [126992080]  oexec                          session #1
+    SELECT MODELOAFV || ' - ' || DESCRICAO                                        FROM MAD_MODELOAFV WHERE MODELOAFV = :1                               
+Time: 09:43:45 Bind (out)  [126992080]  bind function                  session #
+    Null
+Time: 09:43:45 Prepare     [126958464]  oparse                         session #1
+    select MAF_FORNECCONTATO.SEQFORNECCONTATO, MAF_FORNECCONTATO.SEQFORNECEDOR, MAF_FORNECCONTATO.INDPRINCIPAL, MAF_FORNECCONTATO.NOMERAZAO, MAF_FORNECCONTATO.NOMECONTATOEMAILAGE, MAF_FORNECCONTATO.NROCGCCPF, MAF_FORNECCONTATO.FONE, MAF_FORNECCONTATO.CELULAR, MAF_FORNECCONTATO.EMAILAGEFORNEC, MAF_FORNECCONTATO.FAX, MAF_FORNECCONTATO.EMAIL, MAF_FORNECCONTATO.NOMECONTATOEMAILPED, MAF_FORNECCONTATO.EMAILPEDCOMPRA, MAF_FORNECCONTATO.DIGCGCCPF, MAF_FORNECCONTATO.INDTIPOCONTATO, MAF_FORNECCONTATO.CARGO, MAF_FORNECCONTATO.NOMECONTATOEMAILDEV, MAF_FORNECCONTATO.EMAILDEVFORNEC, MAF_FORNECCONTATO.RG, MAF_FORNECCONTATO.EMAILACORDO, MAF_FORNECCONTATO.NOMECONTATOEMAILACORDO, MAF_FORNECCONTATO.EMAILTITULO, MAF_FORNECCONTATO.NOMECONTATOTITULO, MAF_FORNECCONTATO.EMAILLANCPROMO, MAF_FORNECCONTATO.NOMECONTATOLANCPROMO, MAF_FORNECCONTATO.NOMECONTATOEMAILREGDEV, MAF_FORNECCONTATO.EMAILREGDEVFORNEC                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+    from MAF_FORNECCONTATO Where SEQFORNECEDOR = :1                             
+Time: 09:43:45 Bind (in)   [126958464]  bind function                  session #
+    '1095'
+Time: 09:43:45 Execute     [126958464]  oexec                          session #1
+    select MAF_FORNECCONTATO.SEQFORNECCONTATO, MAF_FORNECCONTATO.SEQFORNECEDOR, MAF_FORNECCONTATO.INDPRINCIPAL, MAF_FORNECCONTATO.NOMERAZAO, MAF_FORNECCONTATO.NOMECONTATOEMAILAGE, MAF_FORNECCONTATO.NROCGCCPF, MAF_FORNECCONTATO.FONE, MAF_FORNECCONTATO.CELULAR, MAF_FORNECCONTATO.EMAILAGEFORNEC, MAF_FORNECCONTATO.FAX, MAF_FORNECCONTATO.EMAIL, MAF_FORNECCONTATO.NOMECONTATOEMAILPED, MAF_FORNECCONTATO.EMAILPEDCOMPRA, MAF_FORNECCONTATO.DIGCGCCPF, MAF_FORNECCONTATO.INDTIPOCONTATO, MAF_FORNECCONTATO.CARGO, MAF_FORNECCONTATO.NOMECONTATOEMAILDEV, MAF_FORNECCONTATO.EMAILDEVFORNEC, MAF_FORNECCONTATO.RG, MAF_FORNECCONTATO.EMAILACORDO, MAF_FORNECCONTATO.NOMECONTATOEMAILACORDO, MAF_FORNECCONTATO.EMAILTITULO, MAF_FORNECCONTATO.NOMECONTATOTITULO, MAF_FORNECCONTATO.EMAILLANCPROMO, MAF_FORNECCONTATO.NOMECONTATOLANCPROMO, MAF_FORNECCONTATO.NOMECONTATOEMAILREGDEV, MAF_FORNECCONTATO.EMAILREGDEVFORNEC                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+    from MAF_FORNECCONTATO Where SEQFORNECEDOR = :1                             
+Time: 09:43:45 Bind (out)  [126958464]  bind function                  session #
+    '1095'
+Time: 09:43:45 Prepare     [126992080]  oparse                         session #1
+     
+     select max(f.descricao) 
+                                            
+       from max_atributofixo f 
+     where f.tipatributofixo = 'TIPO_CONTATO_FORNEC' 
+       and f.lista = :1                                                
+Time: 09:43:45 Bind (in)   [126992080]  bind function                  session #
+    'L'
+Time: 09:43:45 Execute     [126992080]  oexec                          session #1
+     
+     select max(f.descricao) 
+                                            
+       from max_atributofixo f 
+     where f.tipatributofixo = 'TIPO_CONTATO_FORNEC' 
+       and f.lista = :1                                                
+Time: 09:43:45 Bind (out)  [126992080]  bind function                  session #
+    'L'
+Time: 09:43:45 Prepare     [126938624]  oparse                         session #1
+    select MAF_FORNECEMPPRODUTO.SEQPRODUTO, MAP_PRODUTO.DESCCOMPLETA, MAF_FORNECEMPPRODUTO.SEQFORNECEMPPRODUTO, MAF_FORNECEMPPRODUTO.SEQFORNECEDOR, MAF_FORNECEMPPRODUTO.NROEMPRESA, MAF_FORNECEMPPRODUTO.USUINCLUSAO, MAF_FORNECEMPPRODUTO.DTHRINCLUSAO                                                                                                                                                                                                                                                                                                                                                                             
+    from MAF_FORNECEMPPRODUTO, MAP_PRODUTO 
+    where  MAF_FORNECEMPPRODUTO.SEQPRODUTO = MAP_PRODUTO.SEQPRODUTO 
+    	AND MAF_FORNECEMPPRODUTO.SEQFORNECEDOR = :1                                            
+    	AND MAF_FORNECEMPPRODUTO.NROEMPRESA = :2                                        
+Time: 09:43:45 Bind (in)   [126938624]  bind function                  session #
+    Null
+Time: 09:43:45 Bind (in)   [126938624]  bind function                  session #
+    Null
+Time: 09:43:45 Execute     [126938624]  oexec                          session #1
+    select MAF_FORNECEMPPRODUTO.SEQPRODUTO, MAP_PRODUTO.DESCCOMPLETA, MAF_FORNECEMPPRODUTO.SEQFORNECEMPPRODUTO, MAF_FORNECEMPPRODUTO.SEQFORNECEDOR, MAF_FORNECEMPPRODUTO.NROEMPRESA, MAF_FORNECEMPPRODUTO.USUINCLUSAO, MAF_FORNECEMPPRODUTO.DTHRINCLUSAO                                                                                                                                                                                                                                                                                                                                                                             
+    from MAF_FORNECEMPPRODUTO, MAP_PRODUTO 
+    where  MAF_FORNECEMPPRODUTO.SEQPRODUTO = MAP_PRODUTO.SEQPRODUTO 
+    	AND MAF_FORNECEMPPRODUTO.SEQFORNECEDOR = :1                                            
+    	AND MAF_FORNECEMPPRODUTO.NROEMPRESA = :2                                        
+Time: 09:43:45 Bind (out)  [126938624]  bind function                  session #
+    Null
+Time: 09:43:45 Bind (out)  [126938624]  bind function                  session #
+    Null
+Time: 09:43:45 Prepare     [127187880]  oparse                         session #1
+    select MAF_FORNECDIVISAO.NRODIVISAO                                                  
+    from MAF_FORNECDIVISAO, MAX_DIVISAO  
+     
+    where  MAF_FORNECDIVISAO.SEQFORNECEDOR = :1                              
+    			AND MAF_FORNECDIVISAO.NRODIVISAO = MAX_DIVISAO.NRODIVISAO 
+Time: 09:43:45 Bind (in)   [127187880]  bind function                  session #
+    '1095'
+Time: 09:43:45 Execute     [127187880]  oexec                          session #1
+    select MAF_FORNECDIVISAO.NRODIVISAO                                                  
+    from MAF_FORNECDIVISAO, MAX_DIVISAO  
+     
+    where  MAF_FORNECDIVISAO.SEQFORNECEDOR = :1                              
+    			AND MAF_FORNECDIVISAO.NRODIVISAO = MAX_DIVISAO.NRODIVISAO 
+Time: 09:43:45 Bind (out)  [127187880]  bind function                  session #
+    '1095'
+Time: 09:43:45 Prepare     [126992080]  oparse                         session #1
+    Select DIVISAO From MAX_DIVISAO 
+    	Where NRODIVISAO = :1             
+                      
+    	Order By DIVISAO Asc
+Time: 09:43:45 Bind (in)   [126992080]  bind function                  session #
+    '1'
+Time: 09:43:45 Execute     [126992080]  oexec                          session #1
+    Select DIVISAO From MAX_DIVISAO 
+    	Where NRODIVISAO = :1             
+                      
+    	Order By DIVISAO Asc
+Time: 09:43:45 Bind (out)  [126992080]  bind function                  session #
+    '1'
+Time: 09:43:45 Prepare     [126938992]  oparse                         session #1
+    select MAF_FORNECDIVISAOCGO.CODGERALOPER, DESCRICAO, MAF_FORNECDIVISAOCGO.INDUTILCFOP, MAF_FORNECDIVISAOCGO.NRODIVISAO, MAF_FORNECDIVISAOCGO.SEQFORNECEDOR                                                                                                                                                                                   
+    from MAF_FORNECDIVISAOCGO, MAX_CODGERALOPER 
+    where  MAF_FORNECDIVISAOCGO.CODGERALOPER      = MAX_CODGERALOPER.CODGERALOPER  
+    			     AND MAF_FORNECDIVISAOCGO.NRODIVISAO    = :1                                         
+    			     AND MAF_FORNECDIVISAOCGO.SEQFORNECEDOR = :2                               
+    order by DESCRICAO
+Time: 09:43:45 Bind (in)   [126938992]  bind function                  session #
+    Null
+Time: 09:43:45 Bind (in)   [126938992]  bind function                  session #
+    '1095'
+Time: 09:43:45 Execute     [126938992]  oexec                          session #1
+    select MAF_FORNECDIVISAOCGO.CODGERALOPER, DESCRICAO, MAF_FORNECDIVISAOCGO.INDUTILCFOP, MAF_FORNECDIVISAOCGO.NRODIVISAO, MAF_FORNECDIVISAOCGO.SEQFORNECEDOR                                                                                                                                                                                   
+    from MAF_FORNECDIVISAOCGO, MAX_CODGERALOPER 
+    where  MAF_FORNECDIVISAOCGO.CODGERALOPER      = MAX_CODGERALOPER.CODGERALOPER  
+    			     AND MAF_FORNECDIVISAOCGO.NRODIVISAO    = :1                                         
+    			     AND MAF_FORNECDIVISAOCGO.SEQFORNECEDOR = :2                               
+    order by DESCRICAO
+Time: 09:43:45 Bind (out)  [126938992]  bind function                  session #
+    Null
+Time: 09:43:45 Bind (out)  [126938992]  bind function                  session #
+    '1095'
+Time: 09:43:45 Prepare     [127167632]  oparse                         session #1
+    select MAF_FORNECDIVISAOCGOCFOP.CFOP, MAF_FORNECDIVISAOCGOCFOP.CODGERALOPER, MAF_FORNECDIVISAOCGOCFOP.NRODIVISAO, MAF_FORNECDIVISAOCGOCFOP.SEQFORNECEDOR                                                                                                                                              
+    from MAF_FORNECDIVISAOCGOCFOP 
+    where  MAF_FORNECDIVISAOCGOCFOP.SEQFORNECEDOR = :1                              
+    			     AND MAF_FORNECDIVISAOCGOCFOP.NRODIVISAO = :2                                  
+    			     AND MAF_FORNECDIVISAOCGOCFOP.CODGERALOPER = :3                           
+Time: 09:43:45 Bind (in)   [127167632]  bind function                  session #
+    '1095'
+Time: 09:43:45 Bind (in)   [127167632]  bind function                  session #
+    Null
+Time: 09:43:45 Bind (in)   [127167632]  bind function                  session #
+    Null
+Time: 09:43:45 Execute     [127167632]  oexec                          session #1
+    select MAF_FORNECDIVISAOCGOCFOP.CFOP, MAF_FORNECDIVISAOCGOCFOP.CODGERALOPER, MAF_FORNECDIVISAOCGOCFOP.NRODIVISAO, MAF_FORNECDIVISAOCGOCFOP.SEQFORNECEDOR                                                                                                                                              
+    from MAF_FORNECDIVISAOCGOCFOP 
+    where  MAF_FORNECDIVISAOCGOCFOP.SEQFORNECEDOR = :1                              
+    			     AND MAF_FORNECDIVISAOCGOCFOP.NRODIVISAO = :2                                  
+    			     AND MAF_FORNECDIVISAOCGOCFOP.CODGERALOPER = :3                           
+Time: 09:43:45 Bind (out)  [127167632]  bind function                  session #
+    '1095'
+Time: 09:43:45 Bind (out)  [127167632]  bind function                  session #
+    Null
+Time: 09:43:45 Bind (out)  [127167632]  bind function                  session #
+    Null
+Time: 09:43:45 Prepare     [127482728]  oparse                         session #1
+    select MAF_FORNECREGIAOCOMPRA.SEQFORNECEDOR, MAF_FORNECREGIAOCOMPRA.SEQREGIAO, B.DESCRICAO, MAF_FORNECREGIAOCOMPRA.NROEMPRESACOMPRA, MAF_FORNECREGIAOCOMPRA.DTAHORAINCLUSAO, MAF_FORNECREGIAOCOMPRA.USUINCLUSAO, MAF_FORNECREGIAOCOMPRA.DTAHORAULTALTERACAO, MAF_FORNECREGIAOCOMPRA.USUULTALTERACAO, C.NOMEREDUZIDO, MAF_FORNECREGIAOCOMPRA.PZOPAGAMENTO                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+    from MAF_FORNECREGIAOCOMPRA, MSU_REGIAOCOMPRA B, MAX_EMPRESA C 
+    where B.SEQREGIAO	= MAF_FORNECREGIAOCOMPRA.SEQREGIAO 
+    			    AND B.NROEMPRESACOMPRA = MAF_FORNECREGIAOCOMPRA.NROEMPRESACOMPRA 
+    			    AND MAF_FORNECREGIAOCOMPRA.SEQFORNECEDOR = :1                              
+    			    AND MAF_FORNECREGIAOCOMPRA.NROEMPRESACOMPRA = C.NROEMPRESA
+Time: 09:43:45 Bind (in)   [127482728]  bind function                  session #
+    '1095'
+Time: 09:43:45 Execute     [127482728]  oexec                          session #1
+    select MAF_FORNECREGIAOCOMPRA.SEQFORNECEDOR, MAF_FORNECREGIAOCOMPRA.SEQREGIAO, B.DESCRICAO, MAF_FORNECREGIAOCOMPRA.NROEMPRESACOMPRA, MAF_FORNECREGIAOCOMPRA.DTAHORAINCLUSAO, MAF_FORNECREGIAOCOMPRA.USUINCLUSAO, MAF_FORNECREGIAOCOMPRA.DTAHORAULTALTERACAO, MAF_FORNECREGIAOCOMPRA.USUULTALTERACAO, C.NOMEREDUZIDO, MAF_FORNECREGIAOCOMPRA.PZOPAGAMENTO                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+    from MAF_FORNECREGIAOCOMPRA, MSU_REGIAOCOMPRA B, MAX_EMPRESA C 
+    where B.SEQREGIAO	= MAF_FORNECREGIAOCOMPRA.SEQREGIAO 
+    			    AND B.NROEMPRESACOMPRA = MAF_FORNECREGIAOCOMPRA.NROEMPRESACOMPRA 
+    			    AND MAF_FORNECREGIAOCOMPRA.SEQFORNECEDOR = :1                              
+    			    AND MAF_FORNECREGIAOCOMPRA.NROEMPRESACOMPRA = C.NROEMPRESA
+Time: 09:43:45 Bind (out)  [127482728]  bind function                  session #
+    '1095'
+Time: 09:43:45 Prepare     [127494648]  oparse                         session #1
+    select MAF_FORNECREGIAOCOMPRAEMP.SEQFORNECEDOR, MAF_FORNECREGIAOCOMPRAEMP.NROEMPRESA, B.NOMEREDUZIDO, MAF_FORNECREGIAOCOMPRAEMP.PZOPAGAMENTO, MAF_FORNECREGIAOCOMPRAEMP.SEQREGIAO, MAF_FORNECREGIAOCOMPRAEMP.DTAHORAINCLUSAO, MAF_FORNECREGIAOCOMPRAEMP.USUINCLUSAO, MAF_FORNECREGIAOCOMPRAEMP.DTAHORAULTALTERACAO, MAF_FORNECREGIAOCOMPRAEMP.USUULTALTERACAO                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+    from MAF_FORNECREGIAOCOMPRAEMP, MAX_EMPRESA B 
+    where B.NROEMPRESA = MAF_FORNECREGIAOCOMPRAEMP.NROEMPRESA 
+    			    AND	MAF_FORNECREGIAOCOMPRAEMP.SEQFORNECEDOR	= :1                                              
+    		            AND MAF_FORNECREGIAOCOMPRAEMP.SEQREGIAO = :2                                         
+Time: 09:43:45 Bind (in)   [127494648]  bind function                  session #
+    Null
+Time: 09:43:45 Bind (in)   [127494648]  bind function                  session #
+    Null
+Time: 09:43:45 Execute     [127494648]  oexec                          session #1
+    select MAF_FORNECREGIAOCOMPRAEMP.SEQFORNECEDOR, MAF_FORNECREGIAOCOMPRAEMP.NROEMPRESA, B.NOMEREDUZIDO, MAF_FORNECREGIAOCOMPRAEMP.PZOPAGAMENTO, MAF_FORNECREGIAOCOMPRAEMP.SEQREGIAO, MAF_FORNECREGIAOCOMPRAEMP.DTAHORAINCLUSAO, MAF_FORNECREGIAOCOMPRAEMP.USUINCLUSAO, MAF_FORNECREGIAOCOMPRAEMP.DTAHORAULTALTERACAO, MAF_FORNECREGIAOCOMPRAEMP.USUULTALTERACAO                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+    from MAF_FORNECREGIAOCOMPRAEMP, MAX_EMPRESA B 
+    where B.NROEMPRESA = MAF_FORNECREGIAOCOMPRAEMP.NROEMPRESA 
+    			    AND	MAF_FORNECREGIAOCOMPRAEMP.SEQFORNECEDOR	= :1                                              
+    		            AND MAF_FORNECREGIAOCOMPRAEMP.SEQREGIAO = :2                                         
+Time: 09:43:45 Bind (out)  [127494648]  bind function                  session #
+    Null
+Time: 09:43:45 Bind (out)  [127494648]  bind function                  session #
+    Null
+Time: 09:43:45 Prepare     [126992080]  oparse                         session #1
+     
+    SELECT 	COUNT(*)                                    
+    FROM   	MAF_FORNECDIVISAO 
+    WHERE  	SEQFORNECEDOR = :1                             
+Time: 09:43:45 Bind (in)   [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:45 Execute     [126992080]  oexec                          session #1
+     
+    SELECT 	COUNT(*)                                    
+    FROM   	MAF_FORNECDIVISAO 
+    WHERE  	SEQFORNECEDOR = :1                             
+Time: 09:43:45 Bind (out)  [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:45 Prepare     [49419808]   oparse                         session #1
+    select MAX_EMPRESAEDI.NOMEEDI, MAX_EMPRESAEDI.LAYOUT, MAX_EMPRESAEDI.NROEMPRESA, MAF_FORNECEDI.SEQFORNECEDOR, MAF_FORNECEDI.CODEDIFORNEC, MAF_FORNECEDI.PASTAIMPORTACAO, MAF_FORNECEDI.PASTAEXPORTACAO, MAF_FORNECEDI.DIRETIMPORTADOS, MAF_FORNECEDI.DIRETREJEITADOS, MAF_FORNECEDI.STATUS, MAF_FORNECEDI.INDREPLICACAO, MAF_FORNECEDI.INDGEROUREPLICACAO, MAX_EMPRESAEDI.STATUS, MAF_FORNECEDI.TIPOCODPRODUTO, MAF_FORNECEDI.INDSUBTRAIDCTOFORNEC, MAF_FORNECEDI.URLWEBSERVICE, MAF_FORNECEDI.INDSOMASTIPI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+    from MAF_FORNECEDI, MAX_EMPRESAEDI, MAX_EDI Where  MAX_EMPRESAEDI.NROEMPRESA 	= MAF_FORNECEDI.NROEMPRESA(+) 
+    		AND    	MAX_EMPRESAEDI.NOMEEDI     	= MAF_FORNECEDI.NOMEEDI(+) 
+    		AND    	MAX_EMPRESAEDI.LAYOUT      	= MAF_FORNECEDI.LAYOUT(+) 
+    		AND    	MAX_EMPRESAEDI.NOMEEDI     	= MAX_EDI.NOMEEDI 
+    		AND    	MAX_EMPRESAEDI.LAYOUT      	= MAX_EDI.LAYOUT 
+    		AND	MAX_EDI.STATUS			= 'A' 
+    		AND	MAX_EMPRESAEDI.NROEMPRESA 	= :1                           
+    		AND	MAF_FORNECEDI.SEQFORNECEDOR(+) = :2                              
+Time: 09:43:45 Bind (in)   [49419808]   bind function                  session #
+    '1'
+Time: 09:43:45 Bind (in)   [49419808]   bind function                  session #
+    '1095'
+Time: 09:43:45 Execute     [49419808]   oexec                          session #1
+    select MAX_EMPRESAEDI.NOMEEDI, MAX_EMPRESAEDI.LAYOUT, MAX_EMPRESAEDI.NROEMPRESA, MAF_FORNECEDI.SEQFORNECEDOR, MAF_FORNECEDI.CODEDIFORNEC, MAF_FORNECEDI.PASTAIMPORTACAO, MAF_FORNECEDI.PASTAEXPORTACAO, MAF_FORNECEDI.DIRETIMPORTADOS, MAF_FORNECEDI.DIRETREJEITADOS, MAF_FORNECEDI.STATUS, MAF_FORNECEDI.INDREPLICACAO, MAF_FORNECEDI.INDGEROUREPLICACAO, MAX_EMPRESAEDI.STATUS, MAF_FORNECEDI.TIPOCODPRODUTO, MAF_FORNECEDI.INDSUBTRAIDCTOFORNEC, MAF_FORNECEDI.URLWEBSERVICE, MAF_FORNECEDI.INDSOMASTIPI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+    from MAF_FORNECEDI, MAX_EMPRESAEDI, MAX_EDI Where  MAX_EMPRESAEDI.NROEMPRESA 	= MAF_FORNECEDI.NROEMPRESA(+) 
+    		AND    	MAX_EMPRESAEDI.NOMEEDI     	= MAF_FORNECEDI.NOMEEDI(+) 
+    		AND    	MAX_EMPRESAEDI.LAYOUT      	= MAF_FORNECEDI.LAYOUT(+) 
+    		AND    	MAX_EMPRESAEDI.NOMEEDI     	= MAX_EDI.NOMEEDI 
+    		AND    	MAX_EMPRESAEDI.LAYOUT      	= MAX_EDI.LAYOUT 
+    		AND	MAX_EDI.STATUS			= 'A' 
+    		AND	MAX_EMPRESAEDI.NROEMPRESA 	= :1                           
+    		AND	MAF_FORNECEDI.SEQFORNECEDOR(+) = :2                              
+Time: 09:43:45 Bind (out)  [49419808]   bind function                  session #
+    '1'
+Time: 09:43:45 Bind (out)  [49419808]   bind function                  session #
+    '1095'
+Time: 09:43:45 Prepare     [126992080]  oparse                         session #1
+    select * from maf_fornecedi 
+    where seqfornecedor = :1                              
+    and nomeedi	   = :2                      
+Time: 09:43:45 Bind (in)   [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:45 Bind (in)   [126992080]  bind function                  session #
+    'ACNIELSEN'
+Time: 09:43:45 Execute     [126992080]  oexec                          session #1
+    select * from maf_fornecedi 
+    where seqfornecedor = :1                              
+    and nomeedi	   = :2                      
+Time: 09:43:45 Bind (out)  [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:45 Bind (out)  [126992080]  bind function                  session #
+    'ACNIELSEN'
+Time: 09:43:45 Prepare     [126992080]  oparse                         session #1
+     
+    	SELECT	A.PASTAIMPORTACAO, A.PASTAEXPORTACAO 
+                                                                             
+    	FROM	MAX_EMPRESAEDI A 
+    	WHERE	A.NOMEEDI = :1                       AND 
+    		A.LAYOUT = :2                      AND 
+    		A.STATUS = 'A' AND 
+    		A.NROEMPRESA = :3                          
+Time: 09:43:45 Bind (in)   [126992080]  bind function                  session #
+    'ACNIELSEN'
+Time: 09:43:45 Bind (in)   [126992080]  bind function                  session #
+    'ACNIELSEN'
+Time: 09:43:45 Bind (in)   [126992080]  bind function                  session #
+    '1'
+Time: 09:43:45 Execute     [126992080]  oexec                          session #1
+     
+    	SELECT	A.PASTAIMPORTACAO, A.PASTAEXPORTACAO 
+                                                                             
+    	FROM	MAX_EMPRESAEDI A 
+    	WHERE	A.NOMEEDI = :1                       AND 
+    		A.LAYOUT = :2                      AND 
+    		A.STATUS = 'A' AND 
+    		A.NROEMPRESA = :3                          
+Time: 09:43:45 Bind (out)  [126992080]  bind function                  session #
+    'ACNIELSEN'
+Time: 09:43:45 Bind (out)  [126992080]  bind function                  session #
+    'ACNIELSEN'
+Time: 09:43:45 Bind (out)  [126992080]  bind function                  session #
+    '1'
+Time: 09:43:45 Prepare     [126992080]  oparse                         session #1
+    select * from maf_fornecedi 
+    where seqfornecedor = :1                              
+    and nomeedi	   = :2                      
+Time: 09:43:45 Bind (in)   [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:45 Bind (in)   [126992080]  bind function                  session #
+    'COLGATE'
+Time: 09:43:45 Execute     [126992080]  oexec                          session #1
+    select * from maf_fornecedi 
+    where seqfornecedor = :1                              
+    and nomeedi	   = :2                      
+Time: 09:43:45 Bind (out)  [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:45 Bind (out)  [126992080]  bind function                  session #
+    'COLGATE'
+Time: 09:43:45 Prepare     [126992080]  oparse                         session #1
+     
+    	SELECT	A.PASTAIMPORTACAO, A.PASTAEXPORTACAO 
+                                                                             
+    	FROM	MAX_EMPRESAEDI A 
+    	WHERE	A.NOMEEDI = :1                       AND 
+    		A.LAYOUT = :2                      AND 
+    		A.STATUS = 'A' AND 
+    		A.NROEMPRESA = :3                          
+Time: 09:43:45 Bind (in)   [126992080]  bind function                  session #
+    'COLGATE'
+Time: 09:43:45 Bind (in)   [126992080]  bind function                  session #
+    'NEOGRID'
+Time: 09:43:45 Bind (in)   [126992080]  bind function                  session #
+    '1'
+Time: 09:43:45 Execute     [126992080]  oexec                          session #1
+     
+    	SELECT	A.PASTAIMPORTACAO, A.PASTAEXPORTACAO 
+                                                                             
+    	FROM	MAX_EMPRESAEDI A 
+    	WHERE	A.NOMEEDI = :1                       AND 
+    		A.LAYOUT = :2                      AND 
+    		A.STATUS = 'A' AND 
+    		A.NROEMPRESA = :3                          
+Time: 09:43:45 Bind (out)  [126992080]  bind function                  session #
+    'COLGATE'
+Time: 09:43:45 Bind (out)  [126992080]  bind function                  session #
+    'NEOGRID'
+Time: 09:43:45 Bind (out)  [126992080]  bind function                  session #
+    '1'
+Time: 09:43:46 Prepare     [126992080]  oparse                         session #1
+    select * from maf_fornecedi 
+    where seqfornecedor = :1                              
+    and nomeedi	   = :2                      
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    'DANONECOMP'
+Time: 09:43:46 Execute     [126992080]  oexec                          session #1
+    select * from maf_fornecedi 
+    where seqfornecedor = :1                              
+    and nomeedi	   = :2                      
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    'DANONECOMP'
+Time: 09:43:46 Prepare     [126992080]  oparse                         session #1
+     
+    	SELECT	A.PASTAIMPORTACAO, A.PASTAEXPORTACAO 
+                                                                             
+    	FROM	MAX_EMPRESAEDI A 
+    	WHERE	A.NOMEEDI = :1                       AND 
+    		A.LAYOUT = :2                      AND 
+    		A.STATUS = 'A' AND 
+    		A.NROEMPRESA = :3                          
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    'DANONECOMP'
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    'DANONECOMP'
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    '1'
+Time: 09:43:46 Execute     [126992080]  oexec                          session #1
+     
+    	SELECT	A.PASTAIMPORTACAO, A.PASTAEXPORTACAO 
+                                                                             
+    	FROM	MAX_EMPRESAEDI A 
+    	WHERE	A.NOMEEDI = :1                       AND 
+    		A.LAYOUT = :2                      AND 
+    		A.STATUS = 'A' AND 
+    		A.NROEMPRESA = :3                          
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    'DANONECOMP'
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    'DANONECOMP'
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    '1'
+Time: 09:43:46 Prepare     [126992080]  oparse                         session #1
+    select * from maf_fornecedi 
+    where seqfornecedor = :1                              
+    and nomeedi	   = :2                      
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    'EDIPEDIDO'
+Time: 09:43:46 Execute     [126992080]  oexec                          session #1
+    select * from maf_fornecedi 
+    where seqfornecedor = :1                              
+    and nomeedi	   = :2                      
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    'EDIPEDIDO'
+Time: 09:43:46 Prepare     [126992080]  oparse                         session #1
+     
+    	SELECT	A.PASTAIMPORTACAO, A.PASTAEXPORTACAO 
+                                                                             
+    	FROM	MAX_EMPRESAEDI A 
+    	WHERE	A.NOMEEDI = :1                       AND 
+    		A.LAYOUT = :2                      AND 
+    		A.STATUS = 'A' AND 
+    		A.NROEMPRESA = :3                          
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    'EDIPEDIDO'
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    'EDIPEDIDO'
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    '1'
+Time: 09:43:46 Execute     [126992080]  oexec                          session #1
+     
+    	SELECT	A.PASTAIMPORTACAO, A.PASTAEXPORTACAO 
+                                                                             
+    	FROM	MAX_EMPRESAEDI A 
+    	WHERE	A.NOMEEDI = :1                       AND 
+    		A.LAYOUT = :2                      AND 
+    		A.STATUS = 'A' AND 
+    		A.NROEMPRESA = :3                          
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    'EDIPEDIDO'
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    'EDIPEDIDO'
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    '1'
+Time: 09:43:46 Prepare     [126992080]  oparse                         session #1
+    select * from maf_fornecedi 
+    where seqfornecedor = :1                              
+    and nomeedi	   = :2                      
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    'NEOGRID'
+Time: 09:43:46 Execute     [126992080]  oexec                          session #1
+    select * from maf_fornecedi 
+    where seqfornecedor = :1                              
+    and nomeedi	   = :2                      
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    'NEOGRID'
+Time: 09:43:46 Prepare     [126992080]  oparse                         session #1
+     
+    	SELECT	A.PASTAIMPORTACAO, A.PASTAEXPORTACAO 
+                                                                             
+    	FROM	MAX_EMPRESAEDI A 
+    	WHERE	A.NOMEEDI = :1                       AND 
+    		A.LAYOUT = :2                      AND 
+    		A.STATUS = 'A' AND 
+    		A.NROEMPRESA = :3                          
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    'NEOGRID'
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    'ORDER'
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    '1'
+Time: 09:43:46 Execute     [126992080]  oexec                          session #1
+     
+    	SELECT	A.PASTAIMPORTACAO, A.PASTAEXPORTACAO 
+                                                                             
+    	FROM	MAX_EMPRESAEDI A 
+    	WHERE	A.NOMEEDI = :1                       AND 
+    		A.LAYOUT = :2                      AND 
+    		A.STATUS = 'A' AND 
+    		A.NROEMPRESA = :3                          
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    'NEOGRID'
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    'ORDER'
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    '1'
+Time: 09:43:46 Prepare     [126992080]  oparse                         session #1
+    select * from maf_fornecedi 
+    where seqfornecedor = :1                              
+    and nomeedi	   = :2                      
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    'RDDS_NIELSEN'
+Time: 09:43:46 Execute     [126992080]  oexec                          session #1
+    select * from maf_fornecedi 
+    where seqfornecedor = :1                              
+    and nomeedi	   = :2                      
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    'RDDS_NIELSEN'
+Time: 09:43:46 Prepare     [126992080]  oparse                         session #1
+     
+    	SELECT	A.PASTAIMPORTACAO, A.PASTAEXPORTACAO 
+                                                                             
+    	FROM	MAX_EMPRESAEDI A 
+    	WHERE	A.NOMEEDI = :1                       AND 
+    		A.LAYOUT = :2                      AND 
+    		A.STATUS = 'A' AND 
+    		A.NROEMPRESA = :3                          
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    'RDDS_NIELSEN'
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    'RDDS_NIELSEN'
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    '1'
+Time: 09:43:46 Execute     [126992080]  oexec                          session #1
+     
+    	SELECT	A.PASTAIMPORTACAO, A.PASTAEXPORTACAO 
+                                                                             
+    	FROM	MAX_EMPRESAEDI A 
+    	WHERE	A.NOMEEDI = :1                       AND 
+    		A.LAYOUT = :2                      AND 
+    		A.STATUS = 'A' AND 
+    		A.NROEMPRESA = :3                          
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    'RDDS_NIELSEN'
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    'RDDS_NIELSEN'
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    '1'
+Time: 09:43:46 Prepare     [126760344]  oparse                         session #1
+    select MAD_CONDICAOPAGTO.NROCONDICAOPAGTO, MAD_CONDICAOPAGTO.DESCCONDICAOPAGTO                                                                                                               
+    from MAD_CONDICAOPAGTO 
+    where  
+    	    MAD_CONDICAOPAGTO.STATUS = 'A' 
+    order by NROCONDICAOPAGTO
+Time: 09:43:46 Execute     [126760344]  oexec                          session #1
+    select MAD_CONDICAOPAGTO.NROCONDICAOPAGTO, MAD_CONDICAOPAGTO.DESCCONDICAOPAGTO                                                                                                               
+    from MAD_CONDICAOPAGTO 
+    where  
+    	    MAD_CONDICAOPAGTO.STATUS = 'A' 
+    order by NROCONDICAOPAGTO
+Time: 09:43:46 Prepare     [126992080]  oparse                         session #1
+     
+    	Select 	*  
+    	  from 	MAF_FORNECCOND 
+    	 Where 	SEQFORNECEDOR = :1                              
+    	   And	NROEMPRESA = :2                           
+    	   And 	NROCONDICAOPAGTO = :3                                     
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    '1'
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    '0'
+Time: 09:43:46 Execute     [126992080]  oexec                          session #1
+     
+    	Select 	*  
+    	  from 	MAF_FORNECCOND 
+    	 Where 	SEQFORNECEDOR = :1                              
+    	   And	NROEMPRESA = :2                           
+    	   And 	NROCONDICAOPAGTO = :3                                     
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    '1'
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    '0'
+Time: 09:43:46 Prepare     [126992080]  oparse                         session #1
+     
+    	Select 	*  
+    	  from 	MAF_FORNECCOND 
+    	 Where 	SEQFORNECEDOR = :1                              
+    	   And	NROEMPRESA = :2                           
+    	   And 	NROCONDICAOPAGTO = :3                                     
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    '1'
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    '5'
+Time: 09:43:46 Execute     [126992080]  oexec                          session #1
+     
+    	Select 	*  
+    	  from 	MAF_FORNECCOND 
+    	 Where 	SEQFORNECEDOR = :1                              
+    	   And	NROEMPRESA = :2                           
+    	   And 	NROCONDICAOPAGTO = :3                                     
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    '1'
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    '5'
+Time: 09:43:46 Prepare     [126992080]  oparse                         session #1
+     
+    	Select 	*  
+    	  from 	MAF_FORNECCOND 
+    	 Where 	SEQFORNECEDOR = :1                              
+    	   And	NROEMPRESA = :2                           
+    	   And 	NROCONDICAOPAGTO = :3                                     
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    '1'
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    '6'
+Time: 09:43:46 Execute     [126992080]  oexec                          session #1
+     
+    	Select 	*  
+    	  from 	MAF_FORNECCOND 
+    	 Where 	SEQFORNECEDOR = :1                              
+    	   And	NROEMPRESA = :2                           
+    	   And 	NROCONDICAOPAGTO = :3                                     
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    '1'
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    '6'
+Time: 09:43:46 Prepare     [126992080]  oparse                         session #1
+     
+    	Select 	*  
+    	  from 	MAF_FORNECCOND 
+    	 Where 	SEQFORNECEDOR = :1                              
+    	   And	NROEMPRESA = :2                           
+    	   And 	NROCONDICAOPAGTO = :3                                     
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    '1'
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    '7'
+Time: 09:43:46 Execute     [126992080]  oexec                          session #1
+     
+    	Select 	*  
+    	  from 	MAF_FORNECCOND 
+    	 Where 	SEQFORNECEDOR = :1                              
+    	   And	NROEMPRESA = :2                           
+    	   And 	NROCONDICAOPAGTO = :3                                     
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    '1'
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    '7'
+Time: 09:43:46 Prepare     [126992080]  oparse                         session #1
+     
+    	Select 	*  
+    	  from 	MAF_FORNECCOND 
+    	 Where 	SEQFORNECEDOR = :1                              
+    	   And	NROEMPRESA = :2                           
+    	   And 	NROCONDICAOPAGTO = :3                                     
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    '1'
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    '9'
+Time: 09:43:46 Execute     [126992080]  oexec                          session #1
+     
+    	Select 	*  
+    	  from 	MAF_FORNECCOND 
+    	 Where 	SEQFORNECEDOR = :1                              
+    	   And	NROEMPRESA = :2                           
+    	   And 	NROCONDICAOPAGTO = :3                                     
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    '1'
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    '9'
+Time: 09:43:46 Prepare     [126992080]  oparse                         session #1
+     
+    	Select 	*  
+    	  from 	MAF_FORNECCOND 
+    	 Where 	SEQFORNECEDOR = :1                              
+    	   And	NROEMPRESA = :2                           
+    	   And 	NROCONDICAOPAGTO = :3                                     
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    '1'
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    '10'
+Time: 09:43:46 Execute     [126992080]  oexec                          session #1
+     
+    	Select 	*  
+    	  from 	MAF_FORNECCOND 
+    	 Where 	SEQFORNECEDOR = :1                              
+    	   And	NROEMPRESA = :2                           
+    	   And 	NROCONDICAOPAGTO = :3                                     
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    '1'
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    '10'
+Time: 09:43:46 Prepare     [126992080]  oparse                         session #1
+     
+    	Select 	*  
+    	  from 	MAF_FORNECCOND 
+    	 Where 	SEQFORNECEDOR = :1                              
+    	   And	NROEMPRESA = :2                           
+    	   And 	NROCONDICAOPAGTO = :3                                     
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    '1'
+Time: 09:43:46 Bind (in)   [126992080]  bind function                  session #
+    '14'
+Time: 09:43:46 Execute     [126992080]  oexec                          session #1
+     
+    	Select 	*  
+    	  from 	MAF_FORNECCOND 
+    	 Where 	SEQFORNECEDOR = :1                              
+    	   And	NROEMPRESA = :2                           
+    	   And 	NROCONDICAOPAGTO = :3                                     
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    '1095'
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    '1'
+Time: 09:43:46 Bind (out)  [126992080]  bind function                  session #
+    '14'
+**** end log for Cadastros  v: 21.02.041   [01 - CD] - Usr: [RONALDOBLJ] - [CONSINCO@EXTRABC5] *************************
+
